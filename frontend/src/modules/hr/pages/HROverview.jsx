@@ -15,7 +15,7 @@ const LEAVE_COLOR = "#eb6834";
 const ATTENDANCE_META = {
   PRESENT: { label: "Present", color: "#16a34a" },
   HALF_DAY: { label: "Half day", color: "#b45309" },
-  ON_LEAVE: { label: "On leave", color: "#235777" },
+  ON_LEAVE: { label: "On leave", color: "#14486e" },
   ABSENT: { label: "Absent", color: "#96271f" },
   NO_LOGIN: { label: "No login", color: "#6b7280" },
 };
@@ -62,7 +62,7 @@ function DepartmentBarChart({ rows }) {
           tick={{ fontSize: 11, fill: "#3a4152", fontFamily: "Manrope, sans-serif" }}
         />
         <Tooltip
-          cursor={{ fill: "#f5f7fa" }}
+          cursor={{ fill: "#f3f5f8" }}
           content={({ active, payload, label }) => {
             if (!active || !payload?.length) return null;
             return <ChartTooltip label={label} rows={[{ name: "Employees", value: payload[0].value, color: DEPT_COLOR }]} />;
@@ -162,7 +162,7 @@ function HROverview() {
         <div className="hrd-kpi-card">
           <div className="hrd-kpi-top">
             <span className="hrd-kpi-label">Active Employees</span>
-            <span className="hrd-kpi-icon" style={{ background: "#eef3f7", color: "#235777" }}><Users size={16} /></span>
+            <span className="hrd-kpi-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><Users size={16} /></span>
           </div>
           <div className="hrd-kpi-value">{kpis.total_active_employees}</div>
         </div>
@@ -239,7 +239,7 @@ function HROverview() {
           ) : (
             pending_promotions.map((p, i) => (
               <div className="hrd-list-row" key={i}>
-                <span className="hrd-list-icon" style={{ background: "#eef3f7", color: "#235777" }}><Award size={15} /></span>
+                <span className="hrd-list-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><Award size={15} /></span>
                 <div className="hrd-list-text">
                   <div className="hrd-list-title">{p.employee_name}</div>
                   <div className="hrd-list-sub">→ {p.new_designation}</div>
@@ -285,7 +285,7 @@ function HROverview() {
           ) : (
             recent_activity.map((a, i) => (
               <div className="hrd-list-row" key={i}>
-                <span className="hrd-list-icon" style={{ background: "#eef3f7", color: "#235777" }}><TrendingUp size={15} /></span>
+                <span className="hrd-list-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><TrendingUp size={15} /></span>
                 <div className="hrd-list-text">
                   <div className="hrd-list-title">{a.title}</div>
                   {a.message && <div className="hrd-list-sub">{a.message}</div>}

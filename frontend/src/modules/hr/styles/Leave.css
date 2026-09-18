@@ -137,9 +137,9 @@
 }
 
 .lv-textarea:focus {
-  outline: 2px solid #235777;
+  outline: 2px solid #14486e;
   outline-offset: 1px;
-  border-color: #235777;
+  border-color: #14486e;
 }
 
 @media (max-width: 1000px) {

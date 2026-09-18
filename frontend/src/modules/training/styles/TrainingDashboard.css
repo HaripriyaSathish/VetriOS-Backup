@@ -96,7 +96,7 @@
 }
 
 .td-name a {
-  color: #1a4f8f;
+  color: #14486e;
   text-decoration: none;
 }
 
@@ -190,8 +190,8 @@
 .fc-field input:focus,
 .fc-field select:focus {
   outline: none;
-  border-color: #6366f1;
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+  border-color: #14486e;
+  box-shadow: 0 0 0 2px rgba(20, 72, 110, 0.15);
 }
 
 .fc-submit-row {
