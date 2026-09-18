@@ -13,14 +13,14 @@
 
 .rp-head h1 {
   font-family: "Sora", sans-serif;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 4px;
 }
 
 .rp-head p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0;
 }
@@ -30,13 +30,13 @@
   color: #96271f;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 12.5px;
+  font-size: 14px;
   margin: 0 0 16px;
 }
 
 .rp-empty {
   color: #3a4152;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .rp-roles-panel {
@@ -50,7 +50,7 @@
 .rp-role-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .rp-role-table th {
@@ -58,7 +58,7 @@
   padding: 9px 16px;
   background: #eaeef4;
   color: #3a4152;
-  font-size: 10.5px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 700;
@@ -77,13 +77,13 @@
 }
 
 .rp-sub {
-  font-size: 12px;
+  font-size: 13.5px;
   color: #3a4152;
 }
 
 .rp-mono {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 13.5px;
   color: #3a4152;
   white-space: nowrap;
 }
@@ -94,7 +94,7 @@
   gap: 5px;
   padding: 3px 9px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
 }
 
@@ -127,13 +127,13 @@
 
 .rp-panel-head h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 15.5px;
   font-family: "Sora", sans-serif;
   color: #161a26;
 }
 
 .rp-hint {
-  font-size: 11px;
+  font-size: 12.5px;
   color: #3a4152;
 }
 
@@ -141,7 +141,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 7px 12px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-family: inherit;
   color: #161a26;
   min-width: 240px;
@@ -165,7 +165,7 @@
   border: 1px solid #c2cad8;
   background: #fff;
   color: #3a4152;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   padding: 6px 10px;
   border-radius: 7px;
@@ -190,7 +190,7 @@
   border: 1px solid #f2871d;
   color: #241505;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -243,7 +243,7 @@
   background: #eaeef4;
   color: #3a4152;
   border-radius: 50%;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 700;
   cursor: pointer;
   display: flex;
@@ -259,14 +259,14 @@
 
 .rp-modal h2 {
   font-family: "Sora", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #161a26;
   margin: 0 28px 14px 0;
 }
 
 .rp-modal label {
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   color: #3a4152;
   margin-top: 10px;
@@ -277,7 +277,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 9px 11px;
-  font-size: 13.5px;
+  font-size: 15px;
   margin-top: 5px;
   font-family: inherit;
   resize: vertical;
@@ -311,20 +311,20 @@
 }
 
 .rp-confirm p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0;
 }
 
 .rp-view-desc {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0 0 10px;
 }
 
 .rp-view-subhead {
   font-family: "Sora", sans-serif;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 700;
   color: #161a26;
   margin: 18px 0 10px;
@@ -339,7 +339,7 @@
 .rp-perm-pill {
   background: #e7f0f7;
   color: #14486e;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
   padding: 4px 9px;
   border-radius: 999px;

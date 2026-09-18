@@ -1257,7 +1257,7 @@ function UserAccounts() {
                             <button
                               type="button"
                               className="ua-btn-accent"
-                              style={{ padding: "6px 12px", fontSize: 12.5 }}
+                              style={{ padding: "6px 12px", fontSize: 14 }}
                               onClick={() => handleApproveLoginRequest(r)}
                             >
                               Approve
@@ -1265,7 +1265,7 @@ function UserAccounts() {
                             <button
                               type="button"
                               className="ua-btn-sm ua-btn-danger"
-                              style={{ padding: "6px 12px", fontSize: 12.5 }}
+                              style={{ padding: "6px 12px", fontSize: 14 }}
                               disabled={rejectingRequestId === r.permission_request_id}
                               onClick={() => handleRejectLoginRequest(r)}
                             >

@@ -13,18 +13,18 @@
 
 .assistant-page-heading h1 {
   margin: 4px 0 8px;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .assistant-page-heading p {
   color: #687386;
-  font-size: 14px;
+  font-size: 15.5px;
   max-width: 680px;
 }
 
 .assistant-eyebrow {
   color: #14486e !important;
-  font-size: 11px !important;
+  font-size: 12.5px !important;
   font-weight: 800;
   letter-spacing: .12em;
 }
@@ -35,7 +35,7 @@
   border: 1px solid #c7ead7;
   border-radius: 999px;
   padding: 7px 12px;
-  font-size: 12px;
+  font-size: 13.5px;
   white-space: nowrap;
 }
 
@@ -70,7 +70,7 @@
   background: #f8fafc;
   color: #36516b;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13.5px;
   padding: 8px 12px;
 }
 
@@ -81,7 +81,7 @@
 
 .assistant-sources {
   color: #6b7789;
-  font-size: 11px;
+  font-size: 12.5px;
 }
 
 .assistant-sources summary {

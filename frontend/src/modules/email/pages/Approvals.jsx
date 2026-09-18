@@ -87,7 +87,7 @@ function Approvals() {
                             </button>
                           </div>
                         ) : (
-                          <span style={{ color: "#8a93a6", fontSize: 12.5 }}>—</span>
+                          <span style={{ color: "#8a93a6", fontSize: 14 }}>—</span>
                         )}
                       </td>
                     </tr>

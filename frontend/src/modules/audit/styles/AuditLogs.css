@@ -4,13 +4,13 @@
 
 .audit-logs-header h1 {
   margin: 0 0 4px;
-  font-size: 22px;
+  font-size: 24.5px;
 }
 
 .audit-logs-subtitle {
   color: #6b7280;
   margin: 0 0 20px;
-  font-size: 14px;
+  font-size: 15.5px;
 }
 
 .audit-tabs {
@@ -24,7 +24,7 @@
   padding: 10px 18px;
   border: none;
   background: none;
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: 500;
   color: #6b7280;
   cursor: pointer;
@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .filter-group label {
@@ -63,7 +63,7 @@
   padding: 6px 8px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .btn-apply, .btn-clear {
@@ -71,7 +71,7 @@
   border-radius: 6px;
   border: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 500;
 }
 
@@ -98,7 +98,7 @@
 .audit-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .audit-table th {
@@ -126,14 +126,14 @@
   color: #4338ca;
   padding: 2px 8px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 500;
 }
 
 .status-pill {
   padding: 2px 10px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
 }
 
@@ -154,5 +154,5 @@
   padding: 10px 14px;
   border-radius: 6px;
   margin-bottom: 14px;
-  font-size: 13px;
+  font-size: 14.5px;
 }

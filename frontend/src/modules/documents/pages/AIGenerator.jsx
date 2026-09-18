@@ -200,7 +200,7 @@ function AIGenerator() {
             {generating ? (
               <p className="doc-empty">Drafting…</p>
             ) : (
-              <p style={{ whiteSpace: "pre-wrap", color: "#3a4152", fontSize: 13.5, lineHeight: 1.6 }}>{draftText}</p>
+              <p style={{ whiteSpace: "pre-wrap", color: "#3a4152", fontSize: 15, lineHeight: 1.6 }}>{draftText}</p>
             )}
           </div>
         </div>

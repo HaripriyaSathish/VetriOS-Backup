@@ -51,10 +51,10 @@ function TreeNode({ node, depth, isRoot, onNodeClick, colors }) {
       >
         <Avatar photo={node.profile_photo} name={node.full_name || node.lead?.full_name} size={isRoot ? 44 : 38} color={c.avatar} />
         <div>
-          <p style={{ fontSize: 13.5, fontWeight: 600, color: '#1E1B4B', margin: 0 }}>
+          <p style={{ fontSize: 15, fontWeight: 600, color: '#1E1B4B', margin: 0 }}>
             {node.full_name || node.lead?.full_name}
           </p>
-          <p style={{ fontSize: 11.5, color: '#76777D', margin: 0 }}>
+          <p style={{ fontSize: 13, color: '#76777D', margin: 0 }}>
             {isRoot ? 'Project Lead' : node.designation}
           </p>
         </div>

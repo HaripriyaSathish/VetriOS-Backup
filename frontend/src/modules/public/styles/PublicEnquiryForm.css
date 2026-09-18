@@ -23,7 +23,7 @@
 
 .pf-card h1 {
   margin: 0 0 4px 0;
-  font-size: 26px;
+  font-size: 29px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -31,12 +31,12 @@
 .pf-card .pf-sub {
   color: #6b7280;
   margin: 0 0 20px 0;
-  font-size: 14px;
+  font-size: 15.5px;
 }
 
 .pf-card label {
   display: block;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   margin: 14px 0 6px 0;
   color: #111827;
@@ -50,7 +50,7 @@
   padding: 8px 10px;
   border: 1px solid #d1d5db !important;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15.5px;
   font-family: inherit;
   outline: none;
 }
@@ -75,7 +75,7 @@
   color: #fff;
   border: none;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.15s ease;
@@ -92,7 +92,7 @@
 
 .pf-error {
   color: #b91c1c;
-  font-size: 13px;
+  font-size: 14.5px;
   margin-top: 12px;
 }
 
@@ -101,10 +101,10 @@
 }
 
 .pf-thankyou h1 {
-  font-size: 28px;
+  font-size: 31.5px;
 }
 .pf-field-error {
   color: #b91c1c;
-  font-size: 12px;
+  font-size: 13.5px;
   margin: 4px 0 0 0;
 }

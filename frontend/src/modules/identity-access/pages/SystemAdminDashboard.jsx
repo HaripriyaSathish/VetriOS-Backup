@@ -89,7 +89,7 @@ function LineChart({ points }) {
         <CartesianGrid vertical={false} stroke="#eef0f3" />
         <XAxis
           dataKey="date" tickFormatter={formatDay} axisLine={{ stroke: "#c3c2b7" }} tickLine={false}
-          tick={{ fontSize: 10.5, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
+          tick={{ fontSize: 12, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
           interval="preserveStartEnd"
         />
         <Tooltip
@@ -111,7 +111,7 @@ function BarChart({ bars }) {
       <RBarChart data={bars} margin={{ top: 20, right: 0, left: 0, bottom: 0 }}>
         <XAxis
           dataKey="date" tickFormatter={(d) => formatDay(d).split(" ")[0]} axisLine={{ stroke: "#c3c2b7" }} tickLine={false}
-          tick={{ fontSize: 10.5, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
+          tick={{ fontSize: 12, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
           interval={bars.length > 4 ? 1 : 0}
         />
         <Tooltip

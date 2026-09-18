@@ -13,14 +13,14 @@
 
 .hr-head h1 {
   font-family: "Sora", sans-serif;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 4px;
 }
 
 .hr-head p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0;
 }
@@ -30,7 +30,7 @@
   color: #96271f;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 12.5px;
+  font-size: 14px;
   margin: 0 0 16px;
 }
 
@@ -51,7 +51,7 @@
   padding: 10px 4px;
   margin-right: 20px;
   font-family: inherit;
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 600;
   color: #3a4152;
   border-bottom: 2px solid transparent;
@@ -70,7 +70,7 @@
 .hr-tab-count {
   background: #eaeef4;
   color: #3a4152;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   padding: 1px 8px;
   border-radius: 999px;
@@ -106,7 +106,7 @@
 .hr-search input {
   border: none;
   outline: none;
-  font-size: 13px;
+  font-size: 14.5px;
   font-family: inherit;
   color: #161a26;
   width: 100%;
@@ -126,7 +126,7 @@
 
 .hr-panel-head h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 15.5px;
   font-family: "Sora", sans-serif;
   color: #161a26;
 }
@@ -134,7 +134,7 @@
 .hr-empty {
   padding: 24px;
   color: #3a4152;
-  font-size: 13px;
+  font-size: 14.5px;
   margin: 0;
 }
 
@@ -145,7 +145,7 @@
 .hr-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .hr-table th {
@@ -153,7 +153,7 @@
   padding: 9px 16px;
   background: #eaeef4;
   color: #3a4152;
-  font-size: 10.5px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 700;
@@ -183,7 +183,7 @@
   justify-content: center;
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 12.5px;
   flex: none;
 }
 
@@ -291,7 +291,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 700;
   color: #161a26;
   margin-bottom: 8px;
@@ -301,7 +301,7 @@
   border: none;
   background: none;
   color: #14486e;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
   padding: 0;
@@ -313,7 +313,7 @@
 }
 
 .hr-popover label {
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
   color: #3a4152;
   margin-top: 8px;
@@ -329,7 +329,7 @@
   border: 1px solid #c2cad8;
   border-radius: 7px;
   padding: 7px 9px;
-  font-size: 12.5px;
+  font-size: 14px;
   margin-top: 4px;
   font-family: inherit;
   width: 100%;
@@ -344,7 +344,7 @@
   display: flex !important;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 500;
   color: #161a26;
   margin-top: 10px !important;
@@ -362,18 +362,18 @@
 
 .hr-name {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14.5px;
   color: #161a26;
 }
 
 .hr-sub {
-  font-size: 11px;
+  font-size: 12.5px;
   color: #3a4152;
 }
 
 .hr-mono {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 13.5px;
   color: #3a4152;
   white-space: nowrap;
 }
@@ -384,7 +384,7 @@
   gap: 5px;
   padding: 3px 9px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
 }
 
@@ -406,7 +406,7 @@
 .hr-intern-badge {
   margin-left: 6px;
   padding: 1px 7px;
-  font-size: 10px;
+  font-size: 11px;
   vertical-align: middle;
 }
 
@@ -446,19 +446,19 @@
   justify-content: center;
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15.5px;
 }
 
 .ob-card-body h3 {
   margin: 0 0 2px;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Sora", sans-serif;
   color: #161a26;
 }
 
 .ob-card-body p {
   margin: 0;
-  font-size: 12px;
+  font-size: 13.5px;
   color: #8a93a6;
 }
 
@@ -466,14 +466,14 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-size: 12px;
+  font-size: 13.5px;
   color: #8a93a6;
   margin-bottom: 6px;
 }
 
 .ob-progress-row strong {
   color: #14486e;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .ob-progress-track {
@@ -500,7 +500,7 @@
   background: #fff;
   color: #161a26;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 9px;
   border-radius: 8px;
   cursor: pointer;
@@ -531,7 +531,7 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   color: #161a26;
   cursor: pointer;
@@ -545,7 +545,7 @@
 }
 
 .ob-step-hint {
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 400;
   color: #3a4152;
 }
@@ -571,7 +571,7 @@
 }
 
 .ob-action-row .ob-checklist-btn {
-  font-size: 12px;
+  font-size: 13.5px;
   padding: 8px 6px;
 }
 
@@ -582,7 +582,7 @@
 }
 
 .ob-assign-fields label {
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   color: #3a4152;
   margin-top: 0;
@@ -595,7 +595,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 9px 11px;
-  font-size: 13.5px;
+  font-size: 15px;
   margin-top: 5px;
   font-family: inherit;
 }
@@ -611,14 +611,14 @@
 
 .rpt-filter-head h3 {
   margin: 0 0 3px;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Sora", sans-serif;
   color: #161a26;
 }
 
 .rpt-filter-head p {
   margin: 0 0 16px;
-  font-size: 12.5px;
+  font-size: 14px;
   color: #8a93a6;
 }
 
@@ -631,7 +631,7 @@
 
 .rpt-filter-row label {
   display: block;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 600;
   color: #3a4152;
   margin-bottom: 5px;
@@ -644,7 +644,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 9px 11px;
-  font-size: 13.5px;
+  font-size: 15px;
   font-family: inherit;
   background: #fff;
 }
@@ -661,7 +661,7 @@
   justify-content: space-between;
   padding: 14px 18px;
   border-bottom: 1px solid #d9dfe8;
-  font-size: 12.5px;
+  font-size: 14px;
   color: #8a93a6;
 }
 
@@ -691,7 +691,7 @@
 
 .rpt-chart-block h4 {
   margin: 0 0 12px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 700;
   color: #161a26;
 }
@@ -718,13 +718,13 @@
 
 .rpt-donut-value {
   font-family: "Sora", sans-serif;
-  font-size: 22px;
+  font-size: 24.5px;
   font-weight: 700;
   fill: #161a26;
 }
 
 .rpt-donut-sub {
-  font-size: 11px;
+  font-size: 12.5px;
   fill: #8a93a6;
 }
 
@@ -743,7 +743,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .rpt-legend-swatch {
@@ -798,7 +798,7 @@
 }
 
 .rpt-bar-label {
-  font-size: 10.5px;
+  font-size: 12px;
   color: #8a93a6;
   margin-top: 6px;
 }
@@ -811,7 +811,7 @@
 }
 
 .hr-stats-head label {
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 600;
   color: #3a4152;
   margin-top: 0;
@@ -821,7 +821,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 6px 10px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-family: inherit;
   background: #fff;
 }
@@ -831,7 +831,7 @@
   background: #eef1f6;
   color: #3a4152;
   font-family: "SFMono-Regular", ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 13.5px;
   padding: 3px 8px;
   border-radius: 6px;
 }
@@ -840,7 +840,7 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 13px;
+  font-size: 14.5px;
   color: #14486e;
   font-weight: 600;
   cursor: default;
@@ -876,7 +876,7 @@
   padding: 9px 12px;
   border: none;
   background: none;
-  font-size: 13.5px;
+  font-size: 15px;
   color: #161a26;
   cursor: pointer;
   font-family: inherit;
@@ -888,7 +888,7 @@
 
 .pr-employee-empty {
   padding: 9px 12px;
-  font-size: 13px;
+  font-size: 14.5px;
   color: #8a93a6;
 }
 
@@ -967,7 +967,7 @@
 }
 
 .hr-confirm p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 8px 0 0;
 }
@@ -981,7 +981,7 @@
 
 .hr-view-label {
   display: block;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -991,7 +991,7 @@
 
 .hr-view-value {
   display: block;
-  font-size: 13.5px;
+  font-size: 15px;
   color: #161a26;
   font-weight: 500;
 }
@@ -1003,7 +1003,7 @@
   border: 1px solid #c2cad8;
   background: #fff;
   color: #3a4152;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 600;
   padding: 7px 12px;
   border-radius: 7px;
@@ -1024,7 +1024,7 @@
   border: 1px solid #f2871d;
   color: #241505;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -1045,7 +1045,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 12.5px;
+  font-size: 14px;
   padding: 7px 12px;
   margin-left: auto;
 }
@@ -1093,7 +1093,7 @@
   background: #eaeef4;
   color: #3a4152;
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: 700;
   cursor: pointer;
   display: flex;
@@ -1109,20 +1109,20 @@
 
 .hr-modal h2 {
   font-family: "Sora", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #161a26;
   margin: 0 28px 4px 0;
 }
 
 .hr-hint {
-  font-size: 11.5px;
+  font-size: 13px;
   color: #3a4152;
   margin: 0 0 14px;
 }
 
 .hr-modal label {
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   color: #3a4152;
   margin-top: 10px;
@@ -1134,7 +1134,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 9px 11px;
-  font-size: 13.5px;
+  font-size: 15px;
   margin-top: 5px;
   font-family: inherit;
   width: 100%;
@@ -1168,7 +1168,7 @@
   border: 1px solid #d9dfe8;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 500;
   color: #3a4152;
   margin-top: 0;

@@ -12,7 +12,7 @@
 }
 
 .mail-eyebrow {
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -21,14 +21,14 @@
 
 .mail-head h1 {
   font-family: "Sora", sans-serif;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
   color: #161a26;
   margin: 4px 0 4px;
 }
 
 .mail-head p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0;
 }
@@ -39,7 +39,7 @@
   border-radius: 20px;
   background: #fef3c7;
   color: #92400e;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -53,7 +53,7 @@
   border: none;
   color: #fff;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -76,7 +76,7 @@
   border: 1px solid #d9dfe8;
   color: #3a4152;
   font-weight: 600;
-  font-size: 12.5px;
+  font-size: 14px;
   padding: 8px 13px;
   border-radius: 8px;
   cursor: pointer;
@@ -105,14 +105,14 @@
 
 .mail-panel-head h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 15.5px;
   font-family: "Sora", sans-serif;
   color: #161a26;
 }
 
 .mail-panel-head p {
   margin: 3px 0 0;
-  font-size: 12px;
+  font-size: 13.5px;
   color: #8a93a6;
 }
 
@@ -124,7 +124,7 @@
   padding: 24px;
   text-align: center;
   color: #8a93a6;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .mail-error {
@@ -132,13 +132,13 @@
   color: #96271f;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 12.5px;
+  font-size: 14px;
   margin: 0 0 16px;
 }
 
 .mail-form label {
   display: block;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 700;
   color: #3a4152;
   margin: 14px 0 6px;
@@ -156,7 +156,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 9px 11px;
-  font-size: 13.5px;
+  font-size: 15px;
   font-family: inherit;
   background: #fff;
   color: #161a26;
@@ -174,12 +174,12 @@
 .mail-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .mail-table th {
   text-align: left;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -235,14 +235,14 @@
 
 .mail-stat-value {
   font-family: "Sora", sans-serif;
-  font-size: 22px;
+  font-size: 24.5px;
   font-weight: 700;
   color: #161a26;
   line-height: 1.1;
 }
 
 .mail-stat-label {
-  font-size: 12px;
+  font-size: 13.5px;
   color: #8a93a6;
   margin-top: 2px;
 }
@@ -251,7 +251,7 @@
 
 .mail-badge {
   display: inline-block;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -275,7 +275,7 @@
   gap: 6px;
   background: #e6ecfb;
   color: #2f4aa8;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   padding: 5px 9px;
   border-radius: 100px;
@@ -300,7 +300,7 @@
   flex: 1;
   min-width: 160px;
   padding: 4px !important;
-  font-size: 13.5px;
+  font-size: 15px;
 }
 
 .mail-recipient-suggestions {
@@ -319,7 +319,7 @@
 
 .mail-recipient-suggestion {
   padding: 9px 12px;
-  font-size: 13px;
+  font-size: 14.5px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -335,14 +335,14 @@
 }
 
 .mail-recipient-suggestion .email {
-  font-size: 11.5px;
+  font-size: 13px;
   color: #8a93a6;
 }
 
 /* ---- Bulk email type cards ---- */
 
 .mail-type-label {
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 700;
   color: #3a4152;
   margin: 0 0 12px;
@@ -387,7 +387,7 @@
 
 .mail-type-card-title {
   font-family: "Sora", sans-serif;
-  font-size: 15.5px;
+  font-size: 17.5px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 6px;
@@ -395,7 +395,7 @@
 }
 
 .mail-type-card-desc {
-  font-size: 12.5px;
+  font-size: 14px;
   color: #6b7280;
   line-height: 1.5;
   margin: 0;
@@ -414,7 +414,7 @@
 
 .mail-step-title {
   font-family: "Sora", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #14486e;
   margin: 0 0 16px;
@@ -435,7 +435,7 @@
   flex: 1;
   border: none;
   outline: none;
-  font-size: 13.5px;
+  font-size: 15px;
   font-family: inherit;
   color: #161a26;
 }
@@ -456,7 +456,7 @@
   border-radius: 8px;
   padding: 10px 12px;
   cursor: pointer;
-  font-size: 13.5px;
+  font-size: 15px;
   color: #14486e;
   font-weight: 600;
 }
@@ -467,7 +467,7 @@
 }
 
 .mail-step-check-meta {
-  font-size: 11.5px;
+  font-size: 13px;
   color: #8a93a6;
   font-weight: 500;
 }
@@ -483,7 +483,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 700;
   color: #3a4152;
   margin-bottom: 10px;
@@ -542,7 +542,7 @@
 .mail-editor-content {
   padding: 18px 20px;
   min-height: 220px;
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.8;
   color: #262b36;
 }
@@ -553,7 +553,7 @@
 
 .mail-editor-content h2 {
   font-family: "Sora", sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   margin: 0.6em 0 0.3em;
 }
 
@@ -586,12 +586,12 @@
   gap: 14px;
 }
 .maild-card-head { display: flex; align-items: baseline; justify-content: space-between; }
-.maild-card-title { font-size: 14px; font-weight: 700; color: #161a26; }
-.maild-card-sub { font-size: 11.5px; color: #8a93a6; font-weight: 500; }
-.maild-loading { color: #8a93a6; font-size: 13px; }
+.maild-card-title { font-size: 15.5px; font-weight: 700; color: #161a26; }
+.maild-card-sub { font-size: 13px; color: #8a93a6; font-weight: 500; }
+.maild-loading { color: #8a93a6; font-size: 14.5px; }
 
 .maild-legend { display: flex; flex-direction: column; gap: 8px; }
-.maild-legend-row { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: #3a4152; }
+.maild-legend-row { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #3a4152; }
 .maild-legend-swatch { width: 9px; height: 9px; border-radius: 2px; flex: none; }
 .maild-legend-name { flex: 1; }
 .maild-legend-val { font-weight: 700; color: #161a26; font-variant-numeric: tabular-nums; }
@@ -602,8 +602,8 @@
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   pointer-events: none;
 }
-.maild-donut-total { font-size: 22px; font-weight: 800; color: #161a26; line-height: 1.1; }
-.maild-donut-caption { font-size: 10.5px; color: #8a93a6; }
+.maild-donut-total { font-size: 24.5px; font-weight: 800; color: #161a26; line-height: 1.1; }
+.maild-donut-caption { font-size: 12px; color: #8a93a6; }
 
 .maild-tooltip {
   background: #fff;
@@ -613,18 +613,18 @@
   box-shadow: 0 8px 20px rgba(22, 26, 38, 0.1);
   font-family: "Manrope", sans-serif;
 }
-.maild-tooltip-label { font-size: 11px; font-weight: 700; color: #8a93a6; margin-bottom: 4px; }
-.maild-tooltip-row { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: #3a4152; }
+.maild-tooltip-label { font-size: 12.5px; font-weight: 700; color: #8a93a6; margin-bottom: 4px; }
+.maild-tooltip-row { display: flex; align-items: center; gap: 7px; font-size: 14px; color: #3a4152; }
 .maild-tooltip-swatch { width: 8px; height: 8px; border-radius: 2px; flex: none; }
 .maild-tooltip-name { flex: 1; }
 .maild-tooltip-val { font-weight: 700; color: #161a26; margin-left: 10px; }
 
 .maild-pipeline { display: flex; flex-direction: column; gap: 14px; }
 .maild-pipeline-row { display: flex; align-items: center; gap: 10px; }
-.maild-pipeline-label { font-size: 12px; font-weight: 700; width: 84px; flex: none; }
+.maild-pipeline-label { font-size: 13.5px; font-weight: 700; width: 84px; flex: none; }
 .maild-pipeline-bar-track { flex: 1; height: 8px; border-radius: 999px; background: #f0f2f5; overflow: hidden; }
 .maild-pipeline-bar-fill { height: 100%; border-radius: 999px; }
-.maild-pipeline-count { font-size: 12px; font-weight: 700; color: #161a26; width: 20px; text-align: right; flex: none; }
+.maild-pipeline-count { font-size: 13.5px; font-weight: 700; color: #161a26; width: 20px; text-align: right; flex: none; }
 
 .maild-bottom-row {
   display: grid;
@@ -642,9 +642,9 @@
   display: flex; align-items: center; justify-content: center;
 }
 .maild-list-text { flex: 1; min-width: 0; }
-.maild-list-title { font-size: 13px; font-weight: 600; color: #161a26; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.maild-list-sub { font-size: 11.5px; color: #8a93a6; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.maild-list-time { font-size: 11px; color: #8a93a6; font-weight: 600; flex: none; white-space: nowrap; padding-top: 1px; }
+.maild-list-title { font-size: 14.5px; font-weight: 600; color: #161a26; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.maild-list-sub { font-size: 13px; color: #8a93a6; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.maild-list-time { font-size: 12.5px; color: #8a93a6; font-weight: 600; flex: none; white-space: nowrap; padding-top: 1px; }
 
 @media (max-width: 1280px) {
   .maild-charts-row { grid-template-columns: 1fr; }

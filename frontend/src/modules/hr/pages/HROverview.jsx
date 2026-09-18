@@ -59,7 +59,7 @@ function DepartmentBarChart({ rows }) {
         <YAxis
           type="category" dataKey="department_name" width={120}
           axisLine={{ stroke: "#c3c2b7" }} tickLine={false}
-          tick={{ fontSize: 11, fill: "#3a4152", fontFamily: "Manrope, sans-serif" }}
+          tick={{ fontSize: 12.5, fill: "#3a4152", fontFamily: "Manrope, sans-serif" }}
         />
         <Tooltip
           cursor={{ fill: "#f3f5f8" }}
@@ -87,7 +87,7 @@ function LeaveTrendChart({ points }) {
         <CartesianGrid vertical={false} stroke="#eef0f3" />
         <XAxis
           dataKey="date" tickFormatter={formatDay} axisLine={{ stroke: "#c3c2b7" }} tickLine={false}
-          tick={{ fontSize: 10.5, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
+          tick={{ fontSize: 12, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
           interval="preserveStartEnd"
         />
         <Tooltip

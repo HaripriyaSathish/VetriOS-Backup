@@ -283,7 +283,7 @@ function BatchForm() {
   // --- Pre-creation view: the actual batch + student-selection form ---
   return (
     <div className="td-screen">
-      <Link to="/training" style={{ fontSize: "13px", color: "#5b6478" }}>
+      <Link to="/training" style={{ fontSize: "14.5px", color: "#5b6478" }}>
         ← Back to Training Management
       </Link>
       <h1>New Batch</h1>
@@ -313,27 +313,27 @@ function BatchForm() {
                   marginTop: 10, padding: 12, border: "1px solid #d1d5db",
                   borderRadius: 8, background: "#f9fafb",
                 }}>
-                  <p style={{ fontWeight: 600, fontSize: 13, marginBottom: 8 }}>New Course</p>
-                  {courseError && <p className="td-error" style={{ fontSize: 12, marginBottom: 8 }}>{courseError}</p>}
+                  <p style={{ fontWeight: 600, fontSize: 14.5, marginBottom: 8 }}>New Course</p>
+                  {courseError && <p className="td-error" style={{ fontSize: 13.5, marginBottom: 8 }}>{courseError}</p>}
                   <input
                     placeholder="Course name"
                     value={newCourseName}
                     onChange={(e) => setNewCourseName(e.target.value)}
-                    style={{ width: "100%", marginBottom: 8, padding: 6, fontSize: 13 }}
+                    style={{ width: "100%", marginBottom: 8, padding: 6, fontSize: 14.5 }}
                   />
                   <textarea
                     placeholder="Description (optional)"
                     value={newCourseDescription}
                     onChange={(e) => setNewCourseDescription(e.target.value)}
                     rows={2}
-                    style={{ width: "100%", marginBottom: 8, padding: 6, fontSize: 13 }}
+                    style={{ width: "100%", marginBottom: 8, padding: 6, fontSize: 14.5 }}
                   />
                   <input
                     type="number"
                     placeholder="Duration in days (optional)"
                     value={newCourseDuration}
                     onChange={(e) => setNewCourseDuration(e.target.value)}
-                    style={{ width: "100%", marginBottom: 8, padding: 6, fontSize: 13 }}
+                    style={{ width: "100%", marginBottom: 8, padding: 6, fontSize: 14.5 }}
                   />
                   <div style={{ display: "flex", gap: 8 }}>
                     <button
@@ -341,14 +341,14 @@ function BatchForm() {
                       onClick={saveNewCourse}
                       disabled={savingCourse}
                       className="rp-btn-accent"
-                      style={{ fontSize: 12, padding: "6px 12px" }}
+                      style={{ fontSize: 13.5, padding: "6px 12px" }}
                     >
                       {savingCourse ? "Saving…" : "Save Course"}
                     </button>
                     <button
                       type="button"
                       onClick={cancelNewCourse}
-                      style={{ fontSize: 12, padding: "6px 12px", border: "none", background: "none", color: "#6b7280", cursor: "pointer" }}
+                      style={{ fontSize: 13.5, padding: "6px 12px", border: "none", background: "none", color: "#6b7280", cursor: "pointer" }}
                     >
                       Cancel
                     </button>

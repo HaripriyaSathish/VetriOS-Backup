@@ -43,8 +43,8 @@ function Progress() {
             <ResponsiveContainer width="100%" height={220}>
               <LineChart data={scoreData} margin={{ top: 8, right: 16, left: -20, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#EEF2F0" />
-                <XAxis dataKey="label" tick={{ fontSize: 11, fill: "#76777D" }} axisLine={false} tickLine={false} />
-                <YAxis domain={[0, 100]} tick={{ fontSize: 11, fill: "#76777D" }} axisLine={false} tickLine={false} />
+                <XAxis dataKey="label" tick={{ fontSize: 12.5, fill: "#76777D" }} axisLine={false} tickLine={false} />
+                <YAxis domain={[0, 100]} tick={{ fontSize: 12.5, fill: "#76777D" }} axisLine={false} tickLine={false} />
                 <Tooltip formatter={(v) => [`${v} / 100`, "Score"]} />
                 <Line type="monotone" dataKey="score" stroke="#16A34A" strokeWidth={2.5} dot={{ r: 4 }} />
               </LineChart>
