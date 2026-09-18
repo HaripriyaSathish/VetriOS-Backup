@@ -513,7 +513,7 @@
 .ob-checklist-btn:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  background: #f3f5f8;
+  background: #ffffff;
 }
 
 .ob-checklist-btn:disabled:hover {
@@ -786,7 +786,7 @@
   max-width: 22px;
   display: flex;
   align-items: flex-end;
-  background: #f3f5f8;
+  background: #ffffff;
   border-radius: 4px 4px 0 0;
 }
 

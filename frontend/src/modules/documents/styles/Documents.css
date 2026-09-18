@@ -1,7 +1,7 @@
 /* Document Generator module — same design tokens as the rest of VetriOS
-   (Sora headings, Manrope body, #235777 accent, #d98c2b action buttons),
-   kept in its own stylesheet rather than importing HR's so the two
-   modules don't depend on each other's CSS. */
+   (Sora headings, Manrope body, #14486e ink-blue accent, #f2871d orange
+   action buttons), kept in its own stylesheet rather than importing HR's
+   so the two modules don't depend on each other's CSS. */
 
 .doc-screen {
   font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
@@ -42,8 +42,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #d98c2b;
-  border: 1px solid #d98c2b;
+  background: #f2871d;
+  border: 1px solid #f2871d;
   color: #241505;
   font-weight: 700;
   font-size: 13px;
@@ -78,7 +78,7 @@
 }
 
 .doc-btn-sm:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 .doc-icon-btn {
@@ -96,7 +96,7 @@
 }
 
 .doc-icon-btn:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 .doc-icon-btn:disabled {
@@ -234,7 +234,7 @@
   font-family: "Sora", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #235777;
+  color: #14486e;
   margin: 0 0 16px;
 }
 
@@ -275,12 +275,12 @@
   padding: 10px 12px;
   cursor: pointer;
   font-size: 13.5px;
-  color: #235777;
+  color: #14486e;
   font-weight: 600;
 }
 
 .doc-step-check-row:hover {
-  border-color: #235777;
+  border-color: #14486e;
   background: #f5f8fb;
 }
 
@@ -417,7 +417,7 @@
 }
 
 .doc-history-dot.pending {
-  background: #d98c2b;
+  background: #f2871d;
 }
 
 .doc-history-text {
@@ -456,8 +456,12 @@
 }
 
 .doc-view-toggle button.active {
-  background: #235777;
+  background: #f2871d;
   color: #fff;
+}
+
+.doc-view-toggle button.active:hover {
+  background: #d9740a;
 }
 
 /* ---- Filter bar ---- */
@@ -538,7 +542,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #235777;
+  background: #14486e;
   color: #fff;
   font-size: 11px;
   font-weight: 700;
@@ -727,7 +731,7 @@
 }
 
 .doc-pipeline-step.done { background: #1f8a5f; }
-.doc-pipeline-step.current { background: #d98c2b; }
+.doc-pipeline-step.current { background: #f2871d; }
 .doc-pipeline-step.pending { background: #d9dfe8; color: #8a93a6; }
 
 .doc-pipeline-line {
@@ -796,7 +800,7 @@
   font-weight: 600;
   padding: 4px 9px;
   border-radius: 6px;
-  background: #f5f7fa;
+  background: #ffffff;
   color: #3a4152;
   border: 1px solid #d9dfe8;
   margin-right: 6px;
@@ -812,7 +816,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #235777;
+  color: #14486e;
   font-size: 13px;
   font-weight: 600;
   padding: 14px 18px;
@@ -821,7 +825,7 @@
 }
 
 .doc-add-row:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 /* ---- Searchable select (combobox) ---- */
@@ -899,7 +903,7 @@
 }
 
 .doc-search-select-option:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 .doc-search-select-option.selected {
@@ -957,7 +961,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #163c52;
+  background: #14486e;
   color: #fff;
   padding: 10px 18px;
   font-size: 13px;
@@ -1010,8 +1014,12 @@
 }
 
 .doc-editor-btn.active {
-  background: #235777;
+  background: #f2871d;
   color: #fff;
+}
+
+.doc-editor-btn.active:hover {
+  background: #d9740a;
 }
 
 .doc-editor-sep {
@@ -1174,8 +1182,8 @@
 }
 
 .doc-polaroid-add:hover {
-  border-color: #d98c2b;
-  color: #d98c2b;
+  border-color: #f2871d;
+  color: #f2871d;
   transform: none;
 }
 
@@ -1317,7 +1325,7 @@
 
 .doc-tab.active {
   color: #161a26;
-  border-bottom-color: #d98c2b;
+  border-bottom-color: #f2871d;
 }
 
 .doc-tab-count {
@@ -1369,12 +1377,12 @@
 }
 
 .doc-stepper-step.done .doc-stepper-num {
-  background: #235777;
+  background: #14486e;
   color: #fff;
 }
 
 .doc-stepper-step.active .doc-stepper-num {
-  background: #d98c2b;
+  background: #f2871d;
   color: #241505;
 }
 
@@ -1461,8 +1469,8 @@
   justify-content: center;
   gap: 9px;
   width: 100%;
-  background: #235777;
-  border: 1px solid #235777;
+  background: #f2871d;
+  border: 1px solid #f2871d;
   color: #fff;
   font-weight: 700;
   font-size: 14px;
@@ -1472,7 +1480,8 @@
 }
 
 .doc-btn-generate-wide:hover {
-  background: #1a4360;
+  background: #d9740a;
+  border-color: #d9740a;
 }
 
 .doc-btn-generate-wide:disabled {
@@ -1484,8 +1493,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #235777;
-  border: 1px solid #235777;
+  background: #14486e;
+  border: 1px solid #14486e;
   color: #fff;
   font-weight: 700;
   font-size: 13px;
@@ -1518,7 +1527,7 @@
 }
 
 .doc-table-icon-btn:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 /* ---- AI prompt card (Document Generator) ---- */
@@ -1589,15 +1598,15 @@
 }
 
 .doc-type-card:hover {
-  border-color: #235777;
-  box-shadow: 0 1px 2px rgba(22,26,38,.06), 0 10px 24px rgba(35,87,119,.12);
+  border-color: #14486e;
+  box-shadow: 0 1px 2px rgba(22,26,38,.06), 0 10px 24px rgba(20,72,110,.12);
 }
 
 .doc-type-card-icon {
   width: 44px;
   height: 44px;
   border-radius: 10px;
-  background: #235777;
+  background: #14486e;
   color: #fff;
   display: flex;
   align-items: center;

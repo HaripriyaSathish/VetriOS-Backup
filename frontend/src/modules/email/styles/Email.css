@@ -49,7 +49,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #d98c2b;
+  background: #f2871d;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -83,7 +83,7 @@
 }
 
 .mail-btn-sm:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 .mail-btn-sm:disabled {
@@ -230,7 +230,7 @@
 
 .mail-stat-icon.green  { background: #dcfce7; color: #16a34a; }
 .mail-stat-icon.orange { background: #ffedd5; color: #d97706; }
-.mail-stat-icon.navy   { background: #dbeafe; color: #235777; }
+.mail-stat-icon.navy   { background: #dbeafe; color: #14486e; }
 .mail-stat-icon.rose   { background: #ffe4e6; color: #e11d48; }
 
 .mail-stat-value {
@@ -267,7 +267,7 @@
 .mail-badge.failed,
 .mail-badge.bounced          { background: #fbe7e5; color: #96271f; }
 .mail-badge.sent,
-.mail-badge.delivered        { background: #dbeafe; color: #235777; }
+.mail-badge.delivered        { background: #dbeafe; color: #14486e; }
 
 .mail-recipient-chip {
   display: inline-flex;
@@ -326,7 +326,7 @@
 }
 
 .mail-recipient-suggestion:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 .mail-recipient-suggestion .name {
@@ -369,15 +369,15 @@
 }
 
 .mail-type-card:hover {
-  border-color: #235777;
-  box-shadow: 0 1px 2px rgba(22,26,38,.06), 0 10px 24px rgba(35,87,119,.12);
+  border-color: #14486e;
+  box-shadow: 0 1px 2px rgba(22,26,38,.06), 0 10px 24px rgba(20,72,110,.12);
 }
 
 .mail-type-card-icon {
   width: 44px;
   height: 44px;
   border-radius: 10px;
-  background: #235777;
+  background: #14486e;
   color: #fff;
   display: flex;
   align-items: center;
@@ -416,7 +416,7 @@
   font-family: "Sora", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #235777;
+  color: #14486e;
   margin: 0 0 16px;
 }
 
@@ -457,12 +457,12 @@
   padding: 10px 12px;
   cursor: pointer;
   font-size: 13.5px;
-  color: #235777;
+  color: #14486e;
   font-weight: 600;
 }
 
 .mail-step-check-row:hover {
-  border-color: #235777;
+  border-color: #14486e;
   background: #f5f8fb;
 }
 
@@ -524,8 +524,12 @@
 }
 
 .mail-editor-btn.active {
-  background: #235777;
+  background: #f2871d;
   color: #fff;
+}
+
+.mail-editor-btn.active:hover {
+  background: #d9740a;
 }
 
 .mail-editor-sep {

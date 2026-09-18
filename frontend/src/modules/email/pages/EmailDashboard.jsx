@@ -16,7 +16,7 @@ const SENT_COLOR = "#2a78d6";
 const BATCH_STATUS_META = {
   DRAFT: { label: "Draft", color: "#6b7280" },
   SCHEDULED: { label: "Scheduled", color: "#b45309" },
-  PROCESSING: { label: "Processing", color: "#235777" },
+  PROCESSING: { label: "Processing", color: "#14486e" },
   COMPLETED: { label: "Completed", color: "#16a34a" },
   FAILED: { label: "Failed", color: "#96271f" },
 };
@@ -237,7 +237,7 @@ function EmailDashboard() {
               ) : (
                 stats.recent_batches.map((b, i) => (
                   <div className="maild-list-row" key={i}>
-                    <span className="maild-list-icon" style={{ background: "#eef3f7", color: "#235777" }}><Layers size={15} /></span>
+                    <span className="maild-list-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><Layers size={15} /></span>
                     <div className="maild-list-text">
                       <div className="maild-list-title">{b.batch_name}</div>
                       <div className="maild-list-sub">{b.successful_emails}/{b.total_emails} sent{b.failed_emails > 0 ? ` · ${b.failed_emails} failed` : ""}</div>
