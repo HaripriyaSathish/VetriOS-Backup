@@ -32,8 +32,8 @@
 }
 
 .audit-tab.active {
-  color: #1d4ed8;
-  border-bottom-color: #1d4ed8;
+  color: #14486e;
+  border-bottom-color: #14486e;
 }
 
 .audit-filters {
@@ -76,8 +76,12 @@
 }
 
 .btn-apply {
-  background: #1d4ed8;
+  background: #f2871d;
   color: white;
+}
+
+.btn-apply:hover {
+  background: #d9740a;
 }
 
 .btn-clear {

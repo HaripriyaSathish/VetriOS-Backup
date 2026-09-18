@@ -23,7 +23,7 @@
 }
 
 .assistant-eyebrow {
-  color: #28759b !important;
+  color: #14486e !important;
   font-size: 11px !important;
   font-weight: 800;
   letter-spacing: .12em;
@@ -75,8 +75,8 @@
 }
 
 .assistant-quick-prompts button:hover {
-  border-color: #6aaaca;
-  background: #eef7fb;
+  border-color: #14486e;
+  background: #e7f0f7;
 }
 
 .assistant-sources {

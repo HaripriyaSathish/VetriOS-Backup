@@ -10,7 +10,7 @@ const PROJECT_STATUS_META = {
   Planned: { color: "#8a93a6", bg: "#f0f2f5" },
   Active: { color: "#16a34a", bg: "#dcfce7" },
   "On Hold": { color: "#b45309", bg: "#ffedd5" },
-  Completed: { color: "#235777", bg: "#eef3f7" },
+  Completed: { color: "#14486e", bg: "#e7f0f7" },
   Cancelled: { color: "#96271f", bg: "#fbe7e5" },
   Archived: { color: "#8a93a6", bg: "#f0f2f5" },
 };
@@ -19,7 +19,7 @@ const DEFAULT_STATUS_META = { color: "#8a93a6", bg: "#f0f2f5" };
 const ATTENDANCE_META = {
   PRESENT: { label: "Present", color: "#16a34a" },
   HALF_DAY: { label: "Half day", color: "#b45309" },
-  ON_LEAVE: { label: "On leave", color: "#235777" },
+  ON_LEAVE: { label: "On leave", color: "#14486e" },
   ABSENT: { label: "Absent", color: "#96271f" },
 };
 
@@ -126,7 +126,7 @@ function CommonDashboard({ user }) {
   const attendanceTotal = attendanceCounts.reduce((s, x) => s + x.count, 0);
 
   const quickLinks = [
-    user.employee_code && { to: "/my/attendance", label: "My Attendance", icon: CalendarCheck, color: "#235777", bg: "#eef3f7" },
+    user.employee_code && { to: "/my/attendance", label: "My Attendance", icon: CalendarCheck, color: "#14486e", bg: "#e7f0f7" },
     user.employee_code && { to: "/my/leave", label: "My Leave", icon: Palmtree, color: "#16a34a", bg: "#dcfce7" },
     roles.includes("HR Administrator") && { to: "/hr", label: "HR", icon: Briefcase, color: "#b45309", bg: "#ffedd5" },
     permissions.includes("DOCUMENT_VIEW") && { to: "/documents", label: "Document Generator", icon: FileText, color: "#2a6fd6", bg: "#e8f1fc" },

@@ -71,7 +71,7 @@
 .cmnd-activity-row:last-child { border-bottom: none; }
 .cmnd-activity-icon {
   width: 30px; height: 30px; border-radius: 999px; flex: none;
-  background: #eef3f7; color: #235777;
+  background: #e7f0f7; color: #14486e;
   display: flex; align-items: center; justify-content: center;
 }
 .cmnd-activity-text { flex: 1; min-width: 0; }

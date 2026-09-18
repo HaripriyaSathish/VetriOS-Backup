@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100%;
   display: flex;
-  background: #f5f7fa;
+  background: #ffffff;
 }
 
 .app-main {
@@ -30,8 +30,8 @@
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 12px;
   font-weight: 700;
-  color: #235777;
-  background: #eef3f7;
+  color: #14486e;
+  background: #e7f0f7;
   padding: 5px 10px;
   border-radius: 6px;
   letter-spacing: 0.02em;
@@ -61,7 +61,7 @@
 }
 
 .app-user-trigger:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
   border-color: #e2e6ed;
 }
 
@@ -78,7 +78,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #2563eb;
+  background: #14486e;
   color: #fff;
   display: inline-flex;
   align-items: center;
@@ -149,7 +149,7 @@
 }
 
 .app-user-dropdown-item:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
   color: #161a26;
 }
 

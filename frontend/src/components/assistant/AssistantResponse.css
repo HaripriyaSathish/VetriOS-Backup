@@ -253,7 +253,7 @@
   flex: 0 0 6px;
   margin-top: 7px;
   border-radius: 50%;
-  background: #2563eb;
+  background: #14486e;
 }
 
 .ai-response-empty {
@@ -295,7 +295,7 @@
 
 .ai-response-progress-header strong {
   font-size: 16px;
-  color: #2563eb;
+  color: #14486e;
 }
 
 .ai-response-progress-track {
@@ -309,7 +309,7 @@
 .ai-response-progress-fill {
   height: 100%;
   border-radius: inherit;
-  background: #2563eb;
+  background: #14486e;
   transition: width 0.35s ease;
 }
 
