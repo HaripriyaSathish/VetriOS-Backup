@@ -59,8 +59,8 @@
 }
 
 .perm-role-card.active {
-  border-color: #235777;
-  box-shadow: 0 0 0 2px #e4eef3;
+  border-color: #14486e;
+  box-shadow: 0 0 0 2px #e7f0f7;
 }
 
 .perm-role-name {
@@ -154,8 +154,8 @@
 }
 
 .perm-module-tab.active {
-  color: #235777;
-  border-bottom-color: #235777;
+  color: #14486e;
+  border-bottom-color: #14486e;
 }
 
 .perm-module-count {
@@ -209,9 +209,9 @@
 }
 
 .perm-search:focus {
-  outline: 2px solid #235777;
+  outline: 2px solid #14486e;
   outline-offset: 1px;
-  border-color: #235777;
+  border-color: #14486e;
 }
 
 .perm-empty-row {
@@ -253,7 +253,7 @@
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 12px;
   font-weight: 600;
-  color: #235777;
+  color: #14486e;
   white-space: nowrap;
 }
 

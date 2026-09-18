@@ -69,9 +69,9 @@
 }
 
 .ua-search:focus {
-  outline: 2px solid #235777;
+  outline: 2px solid #14486e;
   outline-offset: 1px;
-  border-color: #235777;
+  border-color: #14486e;
 }
 
 .ua-empty {
@@ -119,8 +119,8 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #e4eef3;
-  color: #235777;
+  background: #e7f0f7;
+  color: #14486e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,8 +150,8 @@
 
 .ua-role-pill {
   display: inline-block;
-  background: #e4eef3;
-  color: #235777;
+  background: #e7f0f7;
+  color: #14486e;
   font-size: 11px;
   font-weight: 600;
   padding: 3px 9px;
@@ -215,8 +215,8 @@
 }
 
 .ua-btn-accent {
-  background: #d98c2b;
-  border: 1px solid #d98c2b;
+  background: #f2871d;
+  border: 1px solid #f2871d;
   color: #241505;
   font-weight: 700;
   font-size: 13px;
@@ -226,8 +226,8 @@
 }
 
 .ua-btn-accent:hover {
-  background: #b06f1c;
-  border-color: #b06f1c;
+  background: #d9740a;
+  border-color: #d9740a;
   color: #fff;
 }
 
@@ -352,9 +352,9 @@
 
 .ua-modal input:focus,
 .ua-modal select:focus {
-  outline: 2px solid #235777;
+  outline: 2px solid #14486e;
   outline-offset: 1px;
-  border-color: #235777;
+  border-color: #14486e;
 }
 
 .ua-form-row {
@@ -495,7 +495,7 @@
 
 .ua-perm-info-box svg {
   flex: none;
-  color: #235777;
+  color: #14486e;
   margin-top: 1px;
 }
 
@@ -701,9 +701,14 @@
 }
 
 .ua-mode-btn.active {
-  background: #235777;
-  border-color: #235777;
+  background: #f2871d;
+  border-color: #f2871d;
   color: #fff;
+}
+
+.ua-mode-btn.active:hover {
+  background: #d9740a;
+  border-color: #d9740a;
 }
 
 .ua-person-label-row {
@@ -715,7 +720,7 @@
 .ua-person-clear {
   border: none;
   background: transparent;
-  color: #235777;
+  color: #14486e;
   font-size: 11.5px;
   font-weight: 600;
   cursor: pointer;

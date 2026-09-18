@@ -59,8 +59,8 @@
   cursor: pointer;
 }
 .preq-tab.active {
-  background: #235777;
-  border-color: #235777;
+  background: #14486e;
+  border-color: #14486e;
   color: #fff;
 }
 
@@ -241,9 +241,13 @@
   cursor: pointer;
 }
 .preq-primary {
-  background: #235777 !important;
-  border-color: #235777 !important;
+  background: #f2871d !important;
+  border-color: #f2871d !important;
   color: #fff !important;
+}
+.preq-primary:hover:not(:disabled) {
+  background: #d9740a !important;
+  border-color: #d9740a !important;
 }
 .preq-danger {
   background: #96271f !important;

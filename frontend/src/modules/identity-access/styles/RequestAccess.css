@@ -27,7 +27,7 @@
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #235777, #2f7aa8);
+  background: linear-gradient(135deg, #14486e, #2f7aa8);
   color: #fff;
 }
 .reqa-head p {
@@ -56,8 +56,8 @@
   cursor: pointer;
 }
 .reqa-tabs .reqa-tab.active {
-  background: #235777;
-  border-color: #235777;
+  background: #14486e;
+  border-color: #14486e;
   color: #fff;
 }
 .reqa-tab-badge {
@@ -112,9 +112,9 @@
   transition: all 0.15s ease;
 }
 .reqa-step-dot.active {
-  background: #235777;
+  background: #14486e;
   color: #fff;
-  box-shadow: 0 0 0 4px rgba(35, 87, 119, 0.14);
+  box-shadow: 0 0 0 4px rgba(20, 72, 110, 0.14);
 }
 .reqa-step-dot.done {
   background: #dcfce7;
@@ -129,7 +129,7 @@
   white-space: nowrap;
 }
 .reqa-step-label.active {
-  color: #235777;
+  color: #14486e;
 }
 .reqa-step-label.done {
   color: #16a34a;
@@ -170,8 +170,8 @@
 .reqa-body textarea:focus,
 .reqa-body select:focus {
   outline: none;
-  border-color: #235777;
-  box-shadow: 0 0 0 3px rgba(35, 87, 119, 0.12);
+  border-color: #14486e;
+  box-shadow: 0 0 0 3px rgba(20, 72, 110, 0.12);
 }
 
 .reqa-hint {
@@ -203,15 +203,15 @@
   transition: all 0.15s ease;
 }
 .reqa-type-btn:hover {
-  border-color: #235777;
+  border-color: #14486e;
 }
 .reqa-type-btn.active {
-  border: 2px solid #235777;
-  background: #eef3f7;
-  color: #235777;
+  border: 2px solid #14486e;
+  background: #e7f0f7;
+  color: #14486e;
 }
 .reqa-type-btn.active svg {
-  color: #235777;
+  color: #14486e;
 }
 
 .reqa-doc-search {
@@ -255,13 +255,13 @@
   background: none;
   text-align: left;
   cursor: pointer;
-  color: #235777;
+  color: #14486e;
 }
 .reqa-doc-row:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 .reqa-doc-row.selected {
-  background: #eef3f7;
+  background: #e7f0f7;
 }
 .reqa-doc-row-text {
   flex: 1;
@@ -318,18 +318,18 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: #eef3f7;
-  color: #235777;
+  background: #e7f0f7;
+  color: #14486e;
   transition: all 0.15s ease;
 }
 .reqa-cat-btn:hover {
-  border-color: #235777;
+  border-color: #14486e;
   background: #fff;
-  box-shadow: 0 6px 16px rgba(35, 87, 119, 0.1);
+  box-shadow: 0 6px 16px rgba(20, 72, 110, 0.1);
   transform: translateY(-2px);
 }
 .reqa-cat-btn:hover .reqa-cat-icon {
-  background: #235777;
+  background: #14486e;
   color: #fff;
 }
 
@@ -355,7 +355,7 @@
   transition: all 0.15s ease;
 }
 .reqa-actions button:hover:not(:disabled) {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 .reqa-actions button:disabled {
   opacity: 0.5;
@@ -366,13 +366,13 @@
   padding: 10px 16px !important;
 }
 .reqa-primary {
-  background: #235777 !important;
-  border-color: #235777 !important;
+  background: #f2871d !important;
+  border-color: #f2871d !important;
   color: #fff !important;
-  box-shadow: 0 2px 8px rgba(35, 87, 119, 0.25);
+  box-shadow: 0 2px 8px rgba(242, 135, 29, 0.25);
 }
 .reqa-primary:hover:not(:disabled) {
-  background: #1c4761 !important;
+  background: #d9740a !important;
 }
 
 .reqa-error {
@@ -385,7 +385,7 @@
 }
 
 .reqa-review {
-  background: #f5f7fa;
+  background: #ffffff;
   border-radius: 12px;
   padding: 4px 16px;
 }
@@ -495,5 +495,5 @@
   cursor: pointer;
 }
 .reqa-done-secondary:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }

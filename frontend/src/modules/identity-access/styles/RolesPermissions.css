@@ -150,9 +150,9 @@
 }
 
 .rp-search:focus {
-  outline: 2px solid #235777;
+  outline: 2px solid #14486e;
   outline-offset: 1px;
-  border-color: #235777;
+  border-color: #14486e;
 }
 
 .rp-actions {
@@ -186,8 +186,8 @@
 }
 
 .rp-btn-accent {
-  background: #d98c2b;
-  border: 1px solid #d98c2b;
+  background: #f2871d;
+  border: 1px solid #f2871d;
   color: #241505;
   font-weight: 700;
   font-size: 13px;
@@ -197,8 +197,8 @@
 }
 
 .rp-btn-accent:hover {
-  background: #b06f1c;
-  border-color: #b06f1c;
+  background: #d9740a;
+  border-color: #d9740a;
   color: #fff;
 }
 
@@ -285,9 +285,9 @@
 
 .rp-modal input:focus,
 .rp-modal textarea:focus {
-  outline: 2px solid #235777;
+  outline: 2px solid #14486e;
   outline-offset: 1px;
-  border-color: #235777;
+  border-color: #14486e;
 }
 
 .rp-checkbox {
@@ -337,8 +337,8 @@
 }
 
 .rp-perm-pill {
-  background: #e4eef3;
-  color: #235777;
+  background: #e7f0f7;
+  color: #14486e;
   font-size: 11px;
   font-weight: 600;
   padding: 4px 9px;

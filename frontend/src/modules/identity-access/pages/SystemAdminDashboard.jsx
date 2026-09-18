@@ -188,14 +188,14 @@ function SystemAdminDashboard({ user }) {
         <div className="sad-kpi-card">
           <div className="sad-kpi-top">
             <span className="sad-kpi-label">Total Users</span>
-            <span className="sad-kpi-icon" style={{ background: "#eef3f7", color: "#235777" }}><Users size={16} /></span>
+            <span className="sad-kpi-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><Users size={16} /></span>
           </div>
           <div className="sad-kpi-value">{kpis.total_users}</div>
         </div>
         <div className="sad-kpi-card">
           <div className="sad-kpi-top">
             <span className="sad-kpi-label">Active Roles</span>
-            <span className="sad-kpi-icon" style={{ background: "#eef3f7", color: "#235777" }}><ShieldCheck size={16} /></span>
+            <span className="sad-kpi-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><ShieldCheck size={16} /></span>
           </div>
           <div className="sad-kpi-value">{kpis.active_roles}</div>
         </div>
@@ -301,7 +301,7 @@ function SystemAdminDashboard({ user }) {
           ) : (
             recent_activity.map((a, i) => (
               <div className="sad-activity-row" key={i}>
-                <span className="sad-activity-icon" style={{ background: "#eef3f7", color: "#235777" }}>
+                <span className="sad-activity-icon" style={{ background: "#e7f0f7", color: "#14486e" }}>
                   <TrendingUp size={15} />
                 </span>
                 <div className="sad-activity-text">
