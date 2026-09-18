@@ -42,6 +42,10 @@
   font-weight: 700;
   font-family: "Sora", sans-serif;
   font-size: 14.5px;
+  transition: transform 0.2s ease;
+}
+.sidebar-brand:hover .sidebar-mark {
+  transform: rotate(-6deg) scale(1.06);
 }
 
 .sidebar-brand-name {
@@ -71,10 +75,19 @@
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .sidebar .nav-item:hover {
   background: rgba(255, 255, 255, 0.06);
+  transform: translateX(2px);
+}
+
+.sidebar .nav-item .nav-icon {
+  transition: transform 0.15s ease;
+}
+.sidebar .nav-item:hover .nav-icon {
+  transform: scale(1.1);
 }
 
 .sidebar .nav-count-badge {
@@ -97,6 +110,7 @@
   background: #f2871d;
   color: #0b2a46;
   font-weight: 700;
+  transform: none;
 }
 
 .nav-icon {
@@ -122,6 +136,7 @@
   padding: 9px 12px;
   border-radius: 7px;
   gap: 10px;
+  transition: background 0.15s ease;
 }
 
 .nav-group-toggle:hover {
@@ -153,6 +168,7 @@
   margin: 2px 0 4px 14px;
   padding-left: 14px;
   border-left: 1px solid rgba(255, 255, 255, 0.14);
+  animation: vet-fade-in-up 0.2s ease both;
 }
 
 .sidebar .nav-subitem,
@@ -161,6 +177,14 @@
   font-size: 15.5px;
   font-weight: 500;
   color: #ffffff;
+  border-radius: 6px;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.sidebar .nav-subitem:hover,
+.sidebar .nav-sub-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(2px);
 }
 
 .sidebar .nav-subitem.active,

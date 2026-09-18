@@ -135,7 +135,7 @@ function CommonDashboard({ user }) {
   ].filter(Boolean);
 
   return (
-    <div className="cmnd-body">
+    <div className="cmnd-body vet-page-enter">
       <div className="cmnd-page-head">
         <h1>Welcome, {user.full_name}</h1>
         <p>
@@ -145,7 +145,7 @@ function CommonDashboard({ user }) {
       </div>
 
       {quickLinks.length > 0 && (
-        <div className="cmnd-quicklinks">
+        <div className="cmnd-quicklinks vet-stagger">
           {quickLinks.map((q) => (
             <Link to={q.to} className="cmnd-quicklink" key={q.to}>
               <span className="cmnd-quicklink-icon" style={{ background: q.bg, color: q.color }}>

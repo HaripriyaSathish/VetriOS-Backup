@@ -47,6 +47,10 @@
 .cmnd-quicklink-icon {
   width: 32px; height: 32px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center; flex: none;
+  transition: transform 0.18s ease;
+}
+.cmnd-quicklink:hover .cmnd-quicklink-icon {
+  transform: scale(1.12) rotate(-4deg);
 }
 
 .cmnd-card {
@@ -58,6 +62,12 @@
   flex-direction: column;
   gap: 10px;
   box-shadow: 0 2px 10px rgba(22, 26, 38, 0.08);
+  animation: vet-fade-in-up 0.45s ease both;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.cmnd-card:hover {
+  box-shadow: 0 10px 24px -8px rgba(11, 42, 70, 0.16);
+  transform: translateY(-2px);
 }
 .cmnd-card-head { display: flex; align-items: baseline; justify-content: space-between; }
 .cmnd-card-title { font-size: 15.5px; font-weight: 700; color: #161a26; }
@@ -67,26 +77,36 @@
 .cmnd-activity-row {
   display: flex; align-items: flex-start; gap: 12px; padding: 11px 4px;
   border-bottom: 1px solid #f0f2f5;
+  border-radius: 8px;
+  transition: background 0.15s ease;
 }
 .cmnd-activity-row:last-child { border-bottom: none; }
+.cmnd-activity-row:hover { background: #f7f9fb; }
 .cmnd-activity-icon {
   width: 30px; height: 30px; border-radius: 999px; flex: none;
   background: #e7f0f7; color: #14486e;
   display: flex; align-items: center; justify-content: center;
+  transition: transform 0.18s ease;
 }
+.cmnd-activity-row:hover .cmnd-activity-icon { transform: scale(1.1); }
 .cmnd-activity-text { flex: 1; min-width: 0; }
 
 .cmnd-project-row {
   display: flex; align-items: center; gap: 12px; padding: 11px 4px;
   border-bottom: 1px solid #f0f2f5;
+  border-radius: 8px;
   text-decoration: none; color: inherit;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 .cmnd-project-row:last-child { border-bottom: none; }
+.cmnd-project-row:hover { background: #f7f9fb; transform: translateX(2px); }
 .cmnd-project-icon {
   width: 30px; height: 30px; border-radius: 999px; flex: none;
   background: #ece9f7; color: #7c3aed;
   display: flex; align-items: center; justify-content: center;
+  transition: transform 0.18s ease;
 }
+.cmnd-project-row:hover .cmnd-project-icon { transform: scale(1.1); }
 .cmnd-project-status {
   font-size: 12.5px; font-weight: 700; border-radius: 999px; padding: 3px 10px; flex: none;
 }
@@ -122,6 +142,7 @@
   font-family: "Sora", sans-serif;
   font-size: 24.5px; font-weight: 700; color: #161a26;
   display: block; text-align: center;
+  animation: vet-pop-in 0.4s ease 0.15s both;
 }
 .cmnd-project-donut-caption {
   display: block; text-align: center;

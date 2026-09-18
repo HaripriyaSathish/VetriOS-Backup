@@ -143,6 +143,9 @@ function Login() {
   return (
     <div className="login-screen">
       <div className="login-panel">
+        <span className="login-orb login-orb-1" aria-hidden="true" />
+        <span className="login-orb login-orb-2" aria-hidden="true" />
+        <span className="login-orb login-orb-3" aria-hidden="true" />
         <div className="login-panel-content">
           <span className="login-mark">V</span>
           <h1>VetriOS</h1>
@@ -150,6 +153,11 @@ function Login() {
             One workspace for documents, communication, HR, and every other
             module your organization runs on.
           </p>
+          <ul className="login-highlights">
+            <li>Documents &amp; e-signatures</li>
+            <li>HR, training &amp; payroll</li>
+            <li>Role-based access, audited</li>
+          </ul>
         </div>
       </div>
 
@@ -184,6 +192,7 @@ function Login() {
           {error && <p className="login-error">{error}</p>}
 
           <button type="submit" disabled={submitting}>
+            {submitting && <span className="vet-spinner" aria-hidden="true" />}
             {submitting ? "Signing in…" : "Sign in"}
           </button>
         </form>
