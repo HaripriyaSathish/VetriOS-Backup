@@ -62,6 +62,7 @@ AUTH_USER_MODEL = 'module_01_identity_access.UserAccount'
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -124,11 +125,21 @@ SIMPLE_JWT = {
 }
 
 
-# CORS — allow the frontend dev server to call this API
+# CORS — allow the frontend dev server to call this API. In production the
+# frontend is served from this same Django process/origin (see urls.py's
+# SPA fallback view), so CORS headers aren't actually exercised there —
+# this only matters for local dev, where Vite runs on its own port.
 CORS_ALLOWED_ORIGINS = config(
     'CORS_ALLOWED_ORIGINS',
     default='http://localhost:5173'
 ).split(',')
+
+# CSRF — needed for Django's own session-authenticated views (there are
+# none wired into urls.py today, but this is required by CsrfViewMiddleware
+# whenever DEBUG=False and the app is reached over a non-default origin).
+CSRF_TRUSTED_ORIGINS = [
+    o for o in config('CSRF_TRUSTED_ORIGINS', default='').split(',') if o
+]
 
 
 # Internationalization
@@ -145,6 +156,14 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+# The built frontend (frontend/dist, produced by `npm run build`) — served
+# directly by WhiteNoise at its own root-relative asset paths (e.g.
+# /assets/index-xyz.js), separate from Django's own STATIC_URL/STATIC_ROOT
+# above. Only present after the frontend build step runs (see Dockerfile);
+# harmless if missing locally, WhiteNoise just serves nothing from it.
+FRONTEND_DIST = BASE_DIR.parent / 'frontend' / 'dist'
+WHITENOISE_ROOT = FRONTEND_DIST if FRONTEND_DIST.exists() else None
+
 # Cloudinary — used as the default file storage for uploads
 # (certificates, documents, attachments) instead of local disk
 STORAGES = {
@@ -152,7 +171,7 @@ STORAGES = {
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
     "staticfiles": {
-        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
 
