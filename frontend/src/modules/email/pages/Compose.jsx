@@ -143,7 +143,7 @@ function Compose() {
 
       {error && <div className="mail-error">{error}</div>}
       {sentMessage && (
-        <p style={{ fontSize: 12.5, color: "#16a34a", fontWeight: 600, marginBottom: 16 }}>{sentMessage}</p>
+        <p style={{ fontSize: 14, color: "#16a34a", fontWeight: 600, marginBottom: 16 }}>{sentMessage}</p>
       )}
 
       <div className="mail-panel">

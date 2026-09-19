@@ -1,6 +1,7 @@
 .td-screen {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
+  animation: var(--vet-page-enter);
 }
 
 .td-head {
@@ -14,14 +15,14 @@
 
 .td-head h1 {
   font-family: "Inter", "Segoe UI", sans-serif;
-  font-size: 28px;
+  font-size: 31.5px;
   font-weight: 700;
   color: #14171f;
   margin: 0 0 6px;
 }
 
 .td-head p {
-  font-size: 15px;
+  font-size: 17px;
   color: #3d4351;
   margin: 0;
 }
@@ -31,7 +32,7 @@
   color: #96271f;
   border-radius: 8px;
   padding: 10px 14px;
-  font-size: 14px;
+  font-size: 15.5px;
   margin: 0 0 16px;
 }
 
@@ -55,7 +56,7 @@
 
 .td-panel-head h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Inter", sans-serif;
   color: #14171f;
   font-weight: 700;
@@ -68,7 +69,7 @@
 .td-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14.5px;
+  font-size: 16px;
 }
 
 .td-table th {
@@ -76,7 +77,7 @@
   padding: 11px 18px;
   background: #eaeef4;
   color: #2c3140;
-  font-size: 11.5px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 700;
@@ -92,11 +93,11 @@
 .td-name {
   font-weight: 600;
   color: #14171f;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .td-name a {
-  color: #1a4f8f;
+  color: #14486e;
   text-decoration: none;
 }
 
@@ -105,13 +106,13 @@
 }
 
 .td-sub {
-  font-size: 14px;
+  font-size: 15.5px;
   color: #2c3140;
 }
 
 .td-mono {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 13.5px;
+  font-size: 15px;
   color: #2c3140;
   white-space: nowrap;
 }
@@ -122,7 +123,7 @@
   gap: 5px;
   padding: 4px 11px;
   border-radius: 999px;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -138,7 +139,7 @@
 
 .td-empty {
   color: #3d4351;
-  font-size: 14.5px;
+  font-size: 16px;
   padding: 18px 20px;
 }
 .td-row-clickable {
@@ -172,7 +173,7 @@
 }
 
 .fc-field label {
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   color: #6b7280;
   margin-bottom: 6px;
@@ -183,15 +184,15 @@
   padding: 8px 10px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15.5px;
   min-width: 160px;
 }
 
 .fc-field input:focus,
 .fc-field select:focus {
   outline: none;
-  border-color: #6366f1;
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+  border-color: #14486e;
+  box-shadow: 0 0 0 2px rgba(20, 72, 110, 0.15);
 }
 
 .fc-submit-row {

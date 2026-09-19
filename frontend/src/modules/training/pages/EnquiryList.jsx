@@ -73,7 +73,7 @@ function EnquiryList() {
     <div className="td-screen">
       <div className="td-head">
         <div>
-          <Link to="/training" style={{ fontSize: "13px", color: "#5b6478" }}>
+          <Link to="/training" style={{ fontSize: "14.5px", color: "#5b6478" }}>
             ← Back to Training Management
           </Link>
           <h1>Enquiries</h1>

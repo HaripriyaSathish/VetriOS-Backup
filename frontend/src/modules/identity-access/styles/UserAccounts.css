@@ -13,14 +13,14 @@
 
 .ua-head h1 {
   font-family: "Sora", sans-serif;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 4px;
 }
 
 .ua-head p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0;
 }
@@ -30,7 +30,7 @@
   color: #96271f;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 12.5px;
+  font-size: 14px;
   margin: 0 0 16px;
 }
 
@@ -53,7 +53,7 @@
 
 .ua-panel-head h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 15.5px;
   font-family: "Sora", sans-serif;
   color: #161a26;
 }
@@ -62,22 +62,22 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 7px 12px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-family: inherit;
   color: #161a26;
   min-width: 260px;
 }
 
 .ua-search:focus {
-  outline: 2px solid #235777;
+  outline: 2px solid #14486e;
   outline-offset: 1px;
-  border-color: #235777;
+  border-color: #14486e;
 }
 
 .ua-empty {
   padding: 24px;
   color: #3a4152;
-  font-size: 13px;
+  font-size: 14.5px;
   margin: 0;
 }
 
@@ -88,7 +88,7 @@
 .ua-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .ua-table th {
@@ -96,7 +96,7 @@
   padding: 9px 16px;
   background: #eaeef4;
   color: #3a4152;
-  font-size: 10.5px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 700;
@@ -119,40 +119,40 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #e4eef3;
-  color: #235777;
+  background: #e7f0f7;
+  color: #14486e;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 12.5px;
   flex: none;
 }
 
 .ua-name {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14.5px;
   color: #161a26;
 }
 
 .ua-sub {
-  font-size: 11px;
+  font-size: 12.5px;
   color: #3a4152;
 }
 
 .ua-mono {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 13.5px;
   color: #3a4152;
   white-space: nowrap;
 }
 
 .ua-role-pill {
   display: inline-block;
-  background: #e4eef3;
-  color: #235777;
-  font-size: 11px;
+  background: #e7f0f7;
+  color: #14486e;
+  font-size: 12.5px;
   font-weight: 600;
   padding: 3px 9px;
   border-radius: 999px;
@@ -170,7 +170,7 @@
   gap: 5px;
   padding: 3px 9px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
 }
 
@@ -194,7 +194,7 @@
   border: 1px solid #c2cad8;
   background: #fff;
   color: #3a4152;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   padding: 6px 10px;
   border-radius: 7px;
@@ -215,20 +215,23 @@
 }
 
 .ua-btn-accent {
-  background: #d98c2b;
-  border: 1px solid #d98c2b;
+  background: #f2871d;
+  border: 1px solid #f2871d;
   color: #241505;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .ua-btn-accent:hover {
-  background: #b06f1c;
-  border-color: #b06f1c;
+  background: #d9740a;
+  border-color: #d9740a;
   color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(217, 116, 10, 0.45);
 }
 
 .ua-btn-accent:disabled {
@@ -272,7 +275,7 @@
   background: #eaeef4;
   color: #3a4152;
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: 700;
   cursor: pointer;
   display: flex;
@@ -288,7 +291,7 @@
 
 .ua-modal h2 {
   font-family: "Sora", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #161a26;
   margin: 0 28px 4px 0;
@@ -303,7 +306,7 @@
 
 .ua-modal-identity-name {
   font-family: "Sora", sans-serif;
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: 700;
   color: #161a26;
 }
@@ -318,7 +321,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 500;
   color: #3a4152;
 }
@@ -334,7 +337,7 @@
 }
 
 .ua-modal label {
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   color: #3a4152;
   margin-top: 10px;
@@ -345,16 +348,16 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 9px 11px;
-  font-size: 13.5px;
+  font-size: 15px;
   margin-top: 5px;
   font-family: inherit;
 }
 
 .ua-modal input:focus,
 .ua-modal select:focus {
-  outline: 2px solid #235777;
+  outline: 2px solid #14486e;
   outline-offset: 1px;
-  border-color: #235777;
+  border-color: #14486e;
 }
 
 .ua-form-row {
@@ -377,7 +380,7 @@
 }
 
 .ua-confirm p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0;
 }
@@ -398,13 +401,13 @@
 }
 
 .ua-hint {
-  font-size: 12.5px;
+  font-size: 14px;
   color: #6b7280;
   margin: 0 0 14px;
 }
 
 .ua-perm-hint {
-  font-size: 11.5px;
+  font-size: 13px;
   color: #3a4152;
   margin: 0 0 14px;
 }
@@ -413,7 +416,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 700;
   margin: 5px 0 0;
 }
@@ -479,7 +482,7 @@
   justify-content: center;
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .ua-perm-info-box {
@@ -495,13 +498,13 @@
 
 .ua-perm-info-box svg {
   flex: none;
-  color: #235777;
+  color: #14486e;
   margin-top: 1px;
 }
 
 .ua-perm-info-box p {
   margin: 0;
-  font-size: 12.5px;
+  font-size: 14px;
   color: #3a4152;
   line-height: 1.5;
 }
@@ -547,7 +550,7 @@
 .ua-perm-group-title {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-weight: 700;
-  font-size: 12.5px;
+  font-size: 14px;
   color: #161a26;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -555,7 +558,7 @@
 
 .ua-perm-group-badge {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   color: #3a4152;
   background: #eaeef4;
@@ -571,7 +574,7 @@
 
 .ua-perm-total-count {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: 700;
   color: #161a26;
 }
@@ -622,7 +625,7 @@
 
 .ua-perm-code {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   color: #161a26;
   flex: 1;
@@ -630,7 +633,7 @@
 }
 
 .ua-perm-state {
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 700;
   color: #161a26;
 }
@@ -666,7 +669,7 @@
   flex-direction: row;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   color: #161a26;
 }
@@ -688,7 +691,7 @@
   border: 1px solid #c2cad8;
   background: #fff;
   color: #3a4152;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 600;
   padding: 7px 8px;
   border-radius: 7px;
@@ -701,9 +704,14 @@
 }
 
 .ua-mode-btn.active {
-  background: #235777;
-  border-color: #235777;
+  background: #f2871d;
+  border-color: #f2871d;
   color: #fff;
+}
+
+.ua-mode-btn.active:hover {
+  background: #d9740a;
+  border-color: #d9740a;
 }
 
 .ua-person-label-row {
@@ -715,8 +723,8 @@
 .ua-person-clear {
   border: none;
   background: transparent;
-  color: #235777;
-  font-size: 11.5px;
+  color: #14486e;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
   padding: 0;
@@ -755,7 +763,7 @@
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 17px;
   padding: 4px 6px;
   line-height: 1;
   border-radius: 6px;

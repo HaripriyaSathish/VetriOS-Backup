@@ -162,7 +162,7 @@ function AIGenerator() {
             title="Attach a reference file (.txt, .pdf, .docx)"
             style={{ background: "none", border: "none", cursor: "pointer", padding: 4, display: "flex" }}
           >
-            <Paperclip size={16} color={attachedFile ? "#235777" : "#a7aebc"} />
+            <Paperclip size={16} color={attachedFile ? "#14486e" : "#a7aebc"} />
           </button>
           <input
             ref={fileInputRef}
@@ -200,7 +200,7 @@ function AIGenerator() {
             {generating ? (
               <p className="doc-empty">Drafting…</p>
             ) : (
-              <p style={{ whiteSpace: "pre-wrap", color: "#3a4152", fontSize: 13.5, lineHeight: 1.6 }}>{draftText}</p>
+              <p style={{ whiteSpace: "pre-wrap", color: "#3a4152", fontSize: 15, lineHeight: 1.6 }}>{draftText}</p>
             )}
           </div>
         </div>

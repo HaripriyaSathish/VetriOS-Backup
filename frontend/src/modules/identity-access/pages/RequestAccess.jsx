@@ -236,7 +236,7 @@ function RequestAccess() {
   };
 
   return (
-    <div className="reqa-screen">
+    <div className="reqa-screen vet-page-enter">
       <div className="reqa-head">
         <span className="reqa-eyebrow">Identity &amp; Access</span>
         <h1><span className="reqa-head-icon"><ShieldCheck size={19} /></span> Request access</h1>

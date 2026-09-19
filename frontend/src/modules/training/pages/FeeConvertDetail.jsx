@@ -211,7 +211,7 @@ function FeeConvertDetail() {
 
   return (
     <div className="td-screen">
-      <Link to="/training/fee-conversion" style={{ fontSize: "13px", color: "#5b6478" }}>
+      <Link to="/training/fee-conversion" style={{ fontSize: "14.5px", color: "#5b6478" }}>
         ← Back to Fee & Conversion
       </Link>
       <h1>Set Fee & Convert{enquiry ? ` — ${enquiry.name}` : ""}</h1>

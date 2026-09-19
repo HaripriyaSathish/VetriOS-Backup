@@ -1,10 +1,11 @@
 /* Document Generator module — same design tokens as the rest of VetriOS
-   (Sora headings, Manrope body, #235777 accent, #d98c2b action buttons),
-   kept in its own stylesheet rather than importing HR's so the two
-   modules don't depend on each other's CSS. */
+   (Sora headings, Manrope body, #14486e ink-blue accent, #f2871d orange
+   action buttons), kept in its own stylesheet rather than importing HR's
+   so the two modules don't depend on each other's CSS. */
 
 .doc-screen {
   font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  animation: var(--vet-page-enter);
 }
 
 .doc-head {
@@ -17,7 +18,7 @@
 }
 
 .doc-eyebrow {
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -26,14 +27,14 @@
 
 .doc-head h1 {
   font-family: "Sora", sans-serif;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
   color: #161a26;
   margin: 4px 0 4px;
 }
 
 .doc-head p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0;
 }
@@ -42,20 +43,23 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #d98c2b;
-  border: 1px solid #d98c2b;
+  background: #f2871d;
+  border: 1px solid #f2871d;
   color: #241505;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .doc-btn-accent:hover {
   background: #b06f1c;
   border-color: #b06f1c;
   color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(176, 111, 28, 0.45);
 }
 
 .doc-btn-accent:disabled {
@@ -71,14 +75,14 @@
   border: 1px solid #d9dfe8;
   color: #3a4152;
   font-weight: 600;
-  font-size: 12.5px;
+  font-size: 14px;
   padding: 9px 14px;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .doc-btn-sm:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 .doc-icon-btn {
@@ -96,7 +100,7 @@
 }
 
 .doc-icon-btn:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 .doc-icon-btn:disabled {
@@ -123,7 +127,7 @@
   transform: translateX(-50%);
   background: #161a26;
   color: #fff;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
   white-space: nowrap;
   padding: 5px 8px;
@@ -151,14 +155,14 @@
 
 .doc-panel-head h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 15.5px;
   font-family: "Sora", sans-serif;
   color: #161a26;
 }
 
 .doc-panel-head p {
   margin: 3px 0 0;
-  font-size: 12px;
+  font-size: 13.5px;
   color: #8a93a6;
 }
 
@@ -170,7 +174,7 @@
   padding: 24px;
   text-align: center;
   color: #8a93a6;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .doc-error {
@@ -178,13 +182,13 @@
   color: #96271f;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 12.5px;
+  font-size: 14px;
   margin: 0 0 16px;
 }
 
 .doc-form label {
   display: block;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 700;
   color: #3a4152;
   margin: 14px 0 6px;
@@ -202,7 +206,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 9px 11px;
-  font-size: 13.5px;
+  font-size: 15px;
   font-family: inherit;
   background: #fff;
   color: #161a26;
@@ -232,9 +236,9 @@
 
 .doc-step-title {
   font-family: "Sora", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  color: #235777;
+  color: #14486e;
   margin: 0 0 16px;
 }
 
@@ -253,7 +257,7 @@
   flex: 1;
   border: none;
   outline: none;
-  font-size: 13.5px;
+  font-size: 15px;
   font-family: inherit;
   color: #161a26;
 }
@@ -274,18 +278,18 @@
   border-radius: 8px;
   padding: 10px 12px;
   cursor: pointer;
-  font-size: 13.5px;
-  color: #235777;
+  font-size: 15px;
+  color: #14486e;
   font-weight: 600;
 }
 
 .doc-step-check-row:hover {
-  border-color: #235777;
+  border-color: #14486e;
   background: #f5f8fb;
 }
 
 .doc-step-check-meta {
-  font-size: 11.5px;
+  font-size: 13px;
   color: #8a93a6;
   font-weight: 500;
 }
@@ -301,7 +305,7 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 11.5px;
+  font-size: 13px;
   color: #1f6837;
   background: #e3f5e9;
   border-radius: 7px;
@@ -317,7 +321,7 @@
 }
 
 .doc-upload-hint {
-  font-size: 12px;
+  font-size: 13.5px;
   color: #6b7280;
 }
 
@@ -373,7 +377,7 @@
   border-radius: 8px;
   padding: 32px 36px;
   margin: 18px;
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.8;
   color: #262b36;
   min-height: 360px;
@@ -394,7 +398,7 @@
   gap: 10px;
   padding: 10px 0;
   border-top: 1px solid #eaeef4;
-  font-size: 12.5px;
+  font-size: 14px;
 }
 
 .doc-history-item:first-child {
@@ -417,7 +421,7 @@
 }
 
 .doc-history-dot.pending {
-  background: #d98c2b;
+  background: #f2871d;
 }
 
 .doc-history-text {
@@ -456,8 +460,12 @@
 }
 
 .doc-view-toggle button.active {
-  background: #235777;
+  background: #f2871d;
   color: #fff;
+}
+
+.doc-view-toggle button.active:hover {
+  background: #d9740a;
 }
 
 /* ---- Filter bar ---- */
@@ -475,7 +483,7 @@
   border: 1px solid #d9dfe8;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-family: inherit;
   color: #3a4152;
   background: #fff;
@@ -495,12 +503,12 @@
 .doc-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .doc-table th {
   text-align: left;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -538,9 +546,9 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #235777;
+  background: #14486e;
   color: #fff;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -554,7 +562,7 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   padding: 4px 9px;
   border-radius: 100px;
@@ -647,14 +655,14 @@
 
 .doc-approval-title {
   font-family: "Sora", sans-serif;
-  font-size: 14.5px;
+  font-size: 16px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 4px;
 }
 
 .doc-approval-meta {
-  font-size: 12.5px;
+  font-size: 14px;
   color: #8a93a6;
   display: flex;
   align-items: center;
@@ -676,7 +684,7 @@
   border: 1px solid #1f8a5f;
   color: #fff;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 9px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -694,7 +702,7 @@
   border: 1px solid #f0b8b3;
   color: #96271f;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 9px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -720,14 +728,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 700;
   color: #fff;
   flex: none;
 }
 
 .doc-pipeline-step.done { background: #1f8a5f; }
-.doc-pipeline-step.current { background: #d98c2b; }
+.doc-pipeline-step.current { background: #f2871d; }
 .doc-pipeline-step.pending { background: #d9dfe8; color: #8a93a6; }
 
 .doc-pipeline-line {
@@ -748,7 +756,7 @@
 }
 
 .doc-pipeline-label {
-  font-size: 10.5px;
+  font-size: 12px;
   color: #8a93a6;
   font-weight: 600;
 }
@@ -763,7 +771,7 @@
   color: #92590a;
   border-radius: 8px;
   padding: 10px 14px;
-  font-size: 12.5px;
+  font-size: 14px;
   margin: 16px 18px 0;
 }
 
@@ -771,7 +779,7 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 12px;
+  font-size: 13.5px;
   color: #161a26;
   font-style: italic;
   margin: 10px 18px 0;
@@ -779,7 +787,7 @@
 
 .doc-scope-pill {
   display: inline-flex;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -792,11 +800,11 @@
 
 .doc-perm-pill {
   display: inline-flex;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 600;
   padding: 4px 9px;
   border-radius: 6px;
-  background: #f5f7fa;
+  background: #ffffff;
   color: #3a4152;
   border: 1px solid #d9dfe8;
   margin-right: 6px;
@@ -812,8 +820,8 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #235777;
-  font-size: 13px;
+  color: #14486e;
+  font-size: 14.5px;
   font-weight: 600;
   padding: 14px 18px;
   cursor: pointer;
@@ -821,7 +829,7 @@
 }
 
 .doc-add-row:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 /* ---- Searchable select (combobox) ---- */
@@ -839,7 +847,7 @@
   border: 1px solid #c2cad8;
   border-radius: 8px;
   padding: 9px 11px;
-  font-size: 13.5px;
+  font-size: 15px;
   font-family: inherit;
   background: #fff;
   color: #161a26;
@@ -881,7 +889,7 @@
   flex: 1;
   border: none;
   outline: none;
-  font-size: 13px;
+  font-size: 14.5px;
   font-family: inherit;
   color: #161a26;
 }
@@ -893,13 +901,13 @@
 
 .doc-search-select-option {
   padding: 9px 12px;
-  font-size: 13px;
+  font-size: 14.5px;
   color: #262b36;
   cursor: pointer;
 }
 
 .doc-search-select-option:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 .doc-search-select-option.selected {
@@ -910,7 +918,7 @@
 
 .doc-search-select-empty {
   padding: 14px 12px;
-  font-size: 12.5px;
+  font-size: 14px;
   color: #8a93a6;
   text-align: center;
 }
@@ -946,7 +954,7 @@
 
 .doc-modal-head h3 {
   font-family: "Sora", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   color: #161a26;
 }
@@ -957,10 +965,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #163c52;
+  background: #14486e;
   color: #fff;
   padding: 10px 18px;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
 }
 
@@ -1010,8 +1018,12 @@
 }
 
 .doc-editor-btn.active {
-  background: #235777;
+  background: #f2871d;
   color: #fff;
+}
+
+.doc-editor-btn.active:hover {
+  background: #d9740a;
 }
 
 .doc-editor-sep {
@@ -1024,7 +1036,7 @@
 .doc-editor-content {
   padding: 24px 32px;
   min-height: 360px;
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.8;
   color: #262b36;
 }
@@ -1035,7 +1047,7 @@
 
 .doc-editor-content h2 {
   font-family: "Sora", sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   margin: 0.6em 0 0.3em;
 }
 
@@ -1064,7 +1076,7 @@
   gap: 6px;
   background: #e6ecfb;
   color: #2f4aa8;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
   padding: 5px 9px;
   border-radius: 100px;
@@ -1078,7 +1090,7 @@
   gap: 10px;
   padding: 10px 0;
   border-top: 1px solid #eaeef4;
-  font-size: 12.5px;
+  font-size: 14px;
 }
 
 .doc-bulk-result-row:first-child {
@@ -1125,7 +1137,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  font-size: 9.5px;
+  font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -1137,7 +1149,7 @@
 
 .doc-polaroid-caption {
   font-family: "Sora", sans-serif;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   color: #161a26;
   text-align: center;
@@ -1146,7 +1158,7 @@
 
 .doc-polaroid-sub {
   text-align: center;
-  font-size: 11px;
+  font-size: 12.5px;
   color: #8a93a6;
   margin-top: 4px;
 }
@@ -1166,7 +1178,7 @@
   border-radius: 8px;
   color: #8a93a6;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14.5px;
   cursor: pointer;
   background: transparent;
   box-shadow: none;
@@ -1174,8 +1186,8 @@
 }
 
 .doc-polaroid-add:hover {
-  border-color: #d98c2b;
-  color: #d98c2b;
+  border-color: #f2871d;
+  color: #f2871d;
   transform: none;
 }
 
@@ -1201,7 +1213,7 @@
 
 .doc-category-tag {
   display: inline-block;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 700;
   padding: 2px 9px;
   border-radius: 100px;
@@ -1246,14 +1258,14 @@
 
 .doc-card-title {
   font-family: "Sora", sans-serif;
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 4px;
 }
 
 .doc-card-sub {
-  font-size: 12px;
+  font-size: 13.5px;
   color: #8a93a6;
   margin: 0;
 }
@@ -1279,14 +1291,14 @@
 
 .doc-stat-tile-value {
   font-family: "Sora", sans-serif;
-  font-size: 22px;
+  font-size: 24.5px;
   font-weight: 700;
   color: #161a26;
   line-height: 1.1;
 }
 
 .doc-stat-tile-label {
-  font-size: 12px;
+  font-size: 13.5px;
   color: #8a93a6;
   margin-top: 2px;
 }
@@ -1309,7 +1321,7 @@
   border-bottom: 2px solid transparent;
   color: #8a93a6;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 10px 4px;
   cursor: pointer;
   margin-right: 20px;
@@ -1317,13 +1329,13 @@
 
 .doc-tab.active {
   color: #161a26;
-  border-bottom-color: #d98c2b;
+  border-bottom-color: #f2871d;
 }
 
 .doc-tab-count {
   background: #eaeef4;
   color: #3a4152;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   padding: 1px 7px;
   border-radius: 100px;
@@ -1361,7 +1373,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 700;
   flex-shrink: 0;
   background: #eaeef4;
@@ -1369,17 +1381,17 @@
 }
 
 .doc-stepper-step.done .doc-stepper-num {
-  background: #235777;
+  background: #14486e;
   color: #fff;
 }
 
 .doc-stepper-step.active .doc-stepper-num {
-  background: #d98c2b;
+  background: #f2871d;
   color: #241505;
 }
 
 .doc-stepper-label {
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   color: #8a93a6;
 }
@@ -1398,7 +1410,7 @@
 }
 
 .doc-autofill-badge {
-  font-size: 9.5px;
+  font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1441,7 +1453,7 @@
 
 .doc-preview-empty h4 {
   font-family: "Sora", sans-serif;
-  font-size: 14px;
+  font-size: 15.5px;
   color: #3a4152;
   margin: 0 0 16px;
 }
@@ -1461,18 +1473,22 @@
   justify-content: center;
   gap: 9px;
   width: 100%;
-  background: #235777;
-  border: 1px solid #235777;
+  background: #f2871d;
+  border: 1px solid #f2871d;
   color: #fff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15.5px;
   padding: 13px 16px;
   border-radius: 10px;
   cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .doc-btn-generate-wide:hover {
-  background: #1a4360;
+  background: #d9740a;
+  border-color: #d9740a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(217, 116, 10, 0.45);
 }
 
 .doc-btn-generate-wide:disabled {
@@ -1484,11 +1500,11 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #235777;
-  border: 1px solid #235777;
+  background: #14486e;
+  border: 1px solid #14486e;
   color: #fff;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14.5px;
   padding: 10px 16px;
   border-radius: 100px;
   cursor: pointer;
@@ -1511,14 +1527,14 @@
   border: 1px solid #d9dfe8;
   color: #3a4152;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13.5px;
   padding: 6px 10px;
   border-radius: 7px;
   cursor: pointer;
 }
 
 .doc-table-icon-btn:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 
 /* ---- AI prompt card (Document Generator) ---- */
@@ -1538,7 +1554,7 @@
   resize: none;
   min-height: 88px;
   font-family: "Manrope", sans-serif;
-  font-size: 14.5px;
+  font-size: 16px;
   color: #161a26;
   background: transparent;
 }
@@ -1557,13 +1573,13 @@
 }
 
 .doc-prompt-count {
-  font-size: 11.5px;
+  font-size: 13px;
   color: #a7aebc;
   font-variant-numeric: tabular-nums;
 }
 
 .doc-type-label {
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 700;
   color: #3a4152;
   margin: 22px 0 12px;
@@ -1589,15 +1605,15 @@
 }
 
 .doc-type-card:hover {
-  border-color: #235777;
-  box-shadow: 0 1px 2px rgba(22,26,38,.06), 0 10px 24px rgba(35,87,119,.12);
+  border-color: #14486e;
+  box-shadow: 0 1px 2px rgba(22,26,38,.06), 0 10px 24px rgba(20,72,110,.12);
 }
 
 .doc-type-card-icon {
   width: 44px;
   height: 44px;
   border-radius: 10px;
-  background: #235777;
+  background: #14486e;
   color: #fff;
   display: flex;
   align-items: center;
@@ -1607,7 +1623,7 @@
 
 .doc-type-card-title {
   font-family: "Sora", sans-serif;
-  font-size: 15.5px;
+  font-size: 17.5px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 6px;
@@ -1615,7 +1631,7 @@
 }
 
 .doc-type-card-desc {
-  font-size: 12.5px;
+  font-size: 14px;
   color: #6b7280;
   line-height: 1.5;
   margin: 0;
@@ -1650,14 +1666,14 @@
 }
 .libd-kpi-top { display: flex; align-items: center; justify-content: space-between; }
 .libd-kpi-label {
-  font-size: 11.5px; font-weight: 700; color: #161a26;
+  font-size: 13px; font-weight: 700; color: #161a26;
   text-transform: uppercase; letter-spacing: 0.03em;
 }
 .libd-kpi-icon {
   width: 28px; height: 28px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
 }
-.libd-kpi-value { font-size: 26px; font-weight: 800; color: #161a26; letter-spacing: -0.4px; }
+.libd-kpi-value { font-size: 29px; font-weight: 800; color: #161a26; letter-spacing: -0.4px; }
 
 .libd-charts-row {
   display: grid;
@@ -1675,9 +1691,9 @@
   gap: 10px;
 }
 .libd-card-head { display: flex; align-items: baseline; justify-content: space-between; }
-.libd-card-title { font-size: 13px; font-weight: 700; color: #161a26; }
-.libd-card-sub { font-size: 11px; color: #161a26; font-weight: 500; }
-.libd-loading { font-size: 12.5px; color: #161a26; margin: 0; }
+.libd-card-title { font-size: 14.5px; font-weight: 700; color: #161a26; }
+.libd-card-sub { font-size: 12.5px; color: #161a26; font-weight: 500; }
+.libd-loading { font-size: 14px; color: #161a26; margin: 0; }
 
 .libd-donut-row { display: flex; align-items: center; gap: 12px; }
 .libd-donut-wrap { position: relative; flex: none; width: 130px; }
@@ -1686,10 +1702,10 @@
   display: flex; align-items: center; justify-content: center;
   pointer-events: none;
 }
-.libd-donut-total { font-size: 18px; font-weight: 800; color: #161a26; }
+.libd-donut-total { font-size: 20px; font-weight: 800; color: #161a26; }
 
 .libd-legend { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; }
-.libd-legend-row { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #3a4152; }
+.libd-legend-row { display: flex; align-items: center; gap: 7px; font-size: 13.5px; color: #3a4152; }
 .libd-legend-swatch { width: 8px; height: 8px; border-radius: 2px; flex: none; }
 .libd-legend-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .libd-legend-val { font-weight: 700; color: #161a26; font-variant-numeric: tabular-nums; }
@@ -1702,8 +1718,8 @@
   box-shadow: 0 8px 20px rgba(22, 26, 38, 0.1);
   font-family: "Manrope", sans-serif;
 }
-.libd-tooltip-label { font-size: 11px; font-weight: 700; color: #161a26; margin-bottom: 4px; }
-.libd-tooltip-row { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: #3a4152; }
+.libd-tooltip-label { font-size: 12.5px; font-weight: 700; color: #161a26; margin-bottom: 4px; }
+.libd-tooltip-row { display: flex; align-items: center; gap: 7px; font-size: 14px; color: #3a4152; }
 .libd-tooltip-swatch { width: 8px; height: 8px; border-radius: 2px; flex: none; }
 .libd-tooltip-name { flex: 1; }
 .libd-tooltip-val { font-weight: 700; color: #161a26; margin-left: 10px; }
@@ -1727,7 +1743,7 @@
 }
 
 .doc-table-caption {
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 700;
   color: #161a26;
   margin: 16px 18px 8px;

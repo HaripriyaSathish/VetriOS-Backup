@@ -6,7 +6,7 @@
   margin-bottom: 24px;
 }
 .reqa-eyebrow {
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 700;
   color: #161a26;
   text-transform: uppercase;
@@ -17,7 +17,7 @@
   align-items: center;
   gap: 10px;
   margin: 6px 0 4px;
-  font-size: 23px;
+  font-size: 26px;
   color: #161a26;
 }
 .reqa-head-icon {
@@ -27,14 +27,14 @@
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #235777, #2f7aa8);
+  background: linear-gradient(135deg, #14486e, #2f7aa8);
   color: #fff;
 }
 .reqa-head p {
   margin: 0;
   color: #161a26;
   font-style: italic;
-  font-size: 13.5px;
+  font-size: 15px;
 }
 
 .reqa-tabs {
@@ -51,13 +51,13 @@
   border: 1px solid #e2e6ed;
   background: #fff;
   color: #3a4152;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   cursor: pointer;
 }
 .reqa-tabs .reqa-tab.active {
-  background: #235777;
-  border-color: #235777;
+  background: #14486e;
+  border-color: #14486e;
   color: #fff;
 }
 .reqa-tab-badge {
@@ -70,7 +70,7 @@
   border-radius: 999px;
   background: #e24b4a;
   color: #fff;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   line-height: 1;
 }
@@ -112,16 +112,16 @@
   transition: all 0.15s ease;
 }
 .reqa-step-dot.active {
-  background: #235777;
+  background: #14486e;
   color: #fff;
-  box-shadow: 0 0 0 4px rgba(35, 87, 119, 0.14);
+  box-shadow: 0 0 0 4px rgba(20, 72, 110, 0.14);
 }
 .reqa-step-dot.done {
   background: #dcfce7;
   color: #16a34a;
 }
 .reqa-step-label {
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 600;
   color: #161a26;
   font-style: italic;
@@ -129,7 +129,7 @@
   white-space: nowrap;
 }
 .reqa-step-label.active {
-  color: #235777;
+  color: #14486e;
 }
 .reqa-step-label.done {
   color: #16a34a;
@@ -147,7 +147,7 @@
 
 .reqa-body label {
   display: block;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 600;
   color: #161a26;
   font-style: italic;
@@ -162,7 +162,7 @@
   border: 1px solid #d5dae3;
   border-radius: 9px;
   padding: 10px 12px;
-  font-size: 13.5px;
+  font-size: 15px;
   font-family: inherit;
   resize: vertical;
   transition: border-color 0.15s ease;
@@ -170,12 +170,12 @@
 .reqa-body textarea:focus,
 .reqa-body select:focus {
   outline: none;
-  border-color: #235777;
-  box-shadow: 0 0 0 3px rgba(35, 87, 119, 0.12);
+  border-color: #14486e;
+  box-shadow: 0 0 0 3px rgba(20, 72, 110, 0.12);
 }
 
 .reqa-hint {
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: 600;
   color: #3a4152;
   margin: 0 0 16px;
@@ -197,21 +197,21 @@
   border: 1px solid #e6e9ef;
   background: #fafbfc;
   color: #3a4152;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 .reqa-type-btn:hover {
-  border-color: #235777;
+  border-color: #14486e;
 }
 .reqa-type-btn.active {
-  border: 2px solid #235777;
-  background: #eef3f7;
-  color: #235777;
+  border: 2px solid #14486e;
+  background: #e7f0f7;
+  color: #14486e;
 }
 .reqa-type-btn.active svg {
-  color: #235777;
+  color: #14486e;
 }
 
 .reqa-doc-search {
@@ -228,7 +228,7 @@
   border: none;
   outline: none;
   flex: 1;
-  font-size: 13.5px;
+  font-size: 15px;
   color: #262b36;
 }
 
@@ -238,7 +238,7 @@
   margin-bottom: 8px;
 }
 .reqa-doc-empty {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #161a26;
   font-style: italic;
   padding: 12px 4px;
@@ -255,20 +255,20 @@
   background: none;
   text-align: left;
   cursor: pointer;
-  color: #235777;
+  color: #14486e;
 }
 .reqa-doc-row:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 .reqa-doc-row.selected {
-  background: #eef3f7;
+  background: #e7f0f7;
 }
 .reqa-doc-row-text {
   flex: 1;
   min-width: 0;
 }
 .reqa-doc-title {
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   color: #262b36;
   white-space: nowrap;
@@ -276,13 +276,13 @@
   text-overflow: ellipsis;
 }
 .reqa-doc-meta {
-  font-size: 11.5px;
+  font-size: 13px;
   color: #161a26;
   font-style: italic;
 }
 
 .reqa-already-has-access {
-  font-size: 12px;
+  font-size: 13.5px;
   font-style: italic;
   color: #b45309;
   background: #ffedd5;
@@ -306,7 +306,7 @@
   border: 1px solid #e6e9ef;
   background: #fafbfc;
   color: #3a4152;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -318,18 +318,18 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: #eef3f7;
-  color: #235777;
+  background: #e7f0f7;
+  color: #14486e;
   transition: all 0.15s ease;
 }
 .reqa-cat-btn:hover {
-  border-color: #235777;
+  border-color: #14486e;
   background: #fff;
-  box-shadow: 0 6px 16px rgba(35, 87, 119, 0.1);
+  box-shadow: 0 6px 16px rgba(20, 72, 110, 0.1);
   transform: translateY(-2px);
 }
 .reqa-cat-btn:hover .reqa-cat-icon {
-  background: #235777;
+  background: #14486e;
   color: #fff;
 }
 
@@ -349,13 +349,13 @@
   border: 1px solid #d5dae3;
   background: #fff;
   color: #3a4152;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 .reqa-actions button:hover:not(:disabled) {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }
 .reqa-actions button:disabled {
   opacity: 0.5;
@@ -366,17 +366,20 @@
   padding: 10px 16px !important;
 }
 .reqa-primary {
-  background: #235777 !important;
-  border-color: #235777 !important;
+  background: #f2871d !important;
+  border-color: #f2871d !important;
   color: #fff !important;
-  box-shadow: 0 2px 8px rgba(35, 87, 119, 0.25);
+  box-shadow: 0 2px 8px rgba(242, 135, 29, 0.25);
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 .reqa-primary:hover:not(:disabled) {
-  background: #1c4761 !important;
+  background: #d9740a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(217, 116, 10, 0.45);
 }
 
 .reqa-error {
-  font-size: 12.5px;
+  font-size: 14px;
   color: #96271f;
   background: #fbe7e5;
   border-radius: 8px;
@@ -385,7 +388,7 @@
 }
 
 .reqa-review {
-  background: #f5f7fa;
+  background: #ffffff;
   border-radius: 12px;
   padding: 4px 16px;
 }
@@ -400,7 +403,7 @@
   border-bottom: none;
 }
 .reqa-review-label {
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   color: #161a26;
   font-style: italic;
@@ -408,7 +411,7 @@
   letter-spacing: 0.04em;
 }
 .reqa-review-value {
-  font-size: 13.5px;
+  font-size: 15px;
   color: #262b36;
   line-height: 1.5;
 }
@@ -436,13 +439,13 @@
   margin-bottom: 14px;
 }
 .reqa-done-title {
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 4px;
 }
 .reqa-done-sub {
-  font-size: 13.5px;
+  font-size: 15px;
   color: #161a26;
   font-style: italic;
   margin: 0 0 14px;
@@ -452,7 +455,7 @@
   display: block;
   background: #ffedd5;
   color: #b45309;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 700;
   padding: 4px 14px;
   border-radius: 20px;
@@ -475,7 +478,7 @@
   padding: 11px 0;
   border-radius: 9px;
   border: none;
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -490,10 +493,10 @@
   border: 1px solid #d5dae3;
   background: #fff;
   color: #3a4152;
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   cursor: pointer;
 }
 .reqa-done-secondary:hover {
-  background: #f5f7fa;
+  background: #f3f5f8;
 }

@@ -1,0 +1,107 @@
+/* Shared motion system — keyframes + reusable utility classes used across
+   every module so the app feels consistent rather than plain/static. */
+
+@keyframes vet-fade-in-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes vet-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes vet-pop-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes vet-float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(14px, -18px); }
+}
+
+@keyframes vet-float-alt {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-12px, 14px); }
+}
+
+@keyframes vet-pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.35); }
+  70% { box-shadow: 0 0 0 16px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+@keyframes vet-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes vet-gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Page-level entrance: applied to a module's top-level wrapper so each
+   screen settles in instead of popping in flat. Two forms: the utility
+   class below, or the CSS variable for baking it straight into a
+   module's own root-wrapper selector (both respect reduced-motion). */
+.vet-page-enter {
+  animation: vet-fade-in-up 0.4s ease both;
+}
+
+:root {
+  --vet-page-enter: vet-fade-in-up 0.4s ease both;
+}
+
+/* Staggered card/list entrance — pair with .vet-stagger > * (nth-child
+   delays below) on a grid/list container. */
+.vet-stagger > * {
+  animation: vet-fade-in-up 0.45s ease both;
+}
+.vet-stagger > *:nth-child(1) { animation-delay: 0.02s; }
+.vet-stagger > *:nth-child(2) { animation-delay: 0.06s; }
+.vet-stagger > *:nth-child(3) { animation-delay: 0.1s; }
+.vet-stagger > *:nth-child(4) { animation-delay: 0.14s; }
+.vet-stagger > *:nth-child(5) { animation-delay: 0.18s; }
+.vet-stagger > *:nth-child(6) { animation-delay: 0.22s; }
+.vet-stagger > *:nth-child(n+7) { animation-delay: 0.26s; }
+
+/* Hover-lift — drop onto any card/tile class for a consistent, subtle
+   "pressable" feel. */
+.vet-hover-lift {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.vet-hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px -10px rgba(11, 42, 70, 0.28);
+}
+
+/* Small inline spinner for "submitting…" button states. */
+.vet-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: -2px;
+  animation: vet-spin 0.7s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --vet-page-enter: none;
+  }
+  .vet-page-enter,
+  .vet-stagger > * {
+    animation: none;
+  }
+  .vet-hover-lift:hover {
+    transform: none;
+  }
+  .vet-spinner {
+    animation-duration: 1.4s;
+  }
+}

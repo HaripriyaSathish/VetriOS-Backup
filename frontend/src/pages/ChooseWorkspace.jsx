@@ -115,7 +115,7 @@ function ChooseWorkspace() {
           style={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: 700,
-            fontSize: "24px",
+            fontSize: "27px",
             color: "#1E1B4B",
             textAlign: "center",
             marginBottom: "6px",
@@ -126,7 +126,7 @@ function ChooseWorkspace() {
         <p
           style={{
             fontFamily: "Inter, sans-serif",
-            fontSize: "14px",
+            fontSize: "15.5px",
             color: "#76777D",
             textAlign: "center",
             marginBottom: "32px",
@@ -176,7 +176,7 @@ function ChooseWorkspace() {
                     style={{
                       fontFamily: "Poppins, sans-serif",
                       fontWeight: 600,
-                      fontSize: "15px",
+                      fontSize: "17px",
                       color: "#1E1B4B",
                       margin: 0,
                     }}
@@ -186,7 +186,7 @@ function ChooseWorkspace() {
                   <p
                     style={{
                       fontFamily: "Inter, sans-serif",
-                      fontSize: "12.5px",
+                      fontSize: "14px",
                       color: "#76777D",
                       margin: "2px 0 0",
                     }}

@@ -73,7 +73,7 @@ function BatchDetail() {
   if (!batch) return null;
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
+    <div className="p-6 max-w-6xl mx-auto vet-page-enter">
       <button onClick={() => navigate(-1)} className="text-sm text-gray-500 hover:underline mb-4">
         ← Back
       </button>

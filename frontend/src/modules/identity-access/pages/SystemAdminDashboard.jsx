@@ -89,7 +89,7 @@ function LineChart({ points }) {
         <CartesianGrid vertical={false} stroke="#eef0f3" />
         <XAxis
           dataKey="date" tickFormatter={formatDay} axisLine={{ stroke: "#c3c2b7" }} tickLine={false}
-          tick={{ fontSize: 10.5, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
+          tick={{ fontSize: 12, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
           interval="preserveStartEnd"
         />
         <Tooltip
@@ -111,7 +111,7 @@ function BarChart({ bars }) {
       <RBarChart data={bars} margin={{ top: 20, right: 0, left: 0, bottom: 0 }}>
         <XAxis
           dataKey="date" tickFormatter={(d) => formatDay(d).split(" ")[0]} axisLine={{ stroke: "#c3c2b7" }} tickLine={false}
-          tick={{ fontSize: 10.5, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
+          tick={{ fontSize: 12, fill: "#8a93a6", fontFamily: "Manrope, sans-serif" }}
           interval={bars.length > 4 ? 1 : 0}
         />
         <Tooltip
@@ -178,7 +178,7 @@ function SystemAdminDashboard({ user }) {
   const dbLabel = db.mode === "shared" ? "Shared Database (Tailscale)" : "Local Database (fallback)";
 
   return (
-    <div className="sad-body">
+    <div className="sad-body vet-page-enter">
       <div className="sad-page-head">
         <h1>System Administrator Dashboard</h1>
         <p>An overview of accounts, approvals, and system status across VetriOS.</p>
@@ -188,14 +188,14 @@ function SystemAdminDashboard({ user }) {
         <div className="sad-kpi-card">
           <div className="sad-kpi-top">
             <span className="sad-kpi-label">Total Users</span>
-            <span className="sad-kpi-icon" style={{ background: "#eef3f7", color: "#235777" }}><Users size={16} /></span>
+            <span className="sad-kpi-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><Users size={16} /></span>
           </div>
           <div className="sad-kpi-value">{kpis.total_users}</div>
         </div>
         <div className="sad-kpi-card">
           <div className="sad-kpi-top">
             <span className="sad-kpi-label">Active Roles</span>
-            <span className="sad-kpi-icon" style={{ background: "#eef3f7", color: "#235777" }}><ShieldCheck size={16} /></span>
+            <span className="sad-kpi-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><ShieldCheck size={16} /></span>
           </div>
           <div className="sad-kpi-value">{kpis.active_roles}</div>
         </div>
@@ -301,7 +301,7 @@ function SystemAdminDashboard({ user }) {
           ) : (
             recent_activity.map((a, i) => (
               <div className="sad-activity-row" key={i}>
-                <span className="sad-activity-icon" style={{ background: "#eef3f7", color: "#235777" }}>
+                <span className="sad-activity-icon" style={{ background: "#e7f0f7", color: "#14486e" }}>
                   <TrendingUp size={15} />
                 </span>
                 <div className="sad-activity-text">

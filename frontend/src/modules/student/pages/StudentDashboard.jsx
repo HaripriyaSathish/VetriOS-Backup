@@ -74,7 +74,7 @@ function Dashboard() {
           <ResponsiveContainer width="100%" height={180}>
             <BarChart data={chartData} margin={{ top: 4, right: 8, left: -24, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#EEF2F0" />
-              <XAxis dataKey="date" tick={{ fontSize: 11, fill: "#76777D" }} axisLine={false} tickLine={false} />
+              <XAxis dataKey="date" tick={{ fontSize: 12.5, fill: "#76777D" }} axisLine={false} tickLine={false} />
               <YAxis hide domain={[0, 1]} />
               <Tooltip formatter={(_, __, props) => [props.payload.status, "Status"]} />
               <Bar dataKey="value" radius={[6, 6, 0, 0]} maxBarSize={28}>

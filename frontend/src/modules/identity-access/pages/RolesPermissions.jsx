@@ -134,7 +134,7 @@ function RolesPermissions() {
   });
 
   return (
-    <div className="rp-screen">
+    <div className="rp-screen vet-page-enter">
       <div className="rp-head">
         <div>
           <h1>Roles</h1>

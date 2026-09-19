@@ -161,7 +161,7 @@ function Governance() {
 
       <div className="doc-panel" style={{ marginBottom: 20 }}>
         <div className="doc-panel-body">
-          <label style={{ fontSize: 12.5, fontWeight: 700, color: "#3a4152", display: "block", marginBottom: 6 }}>
+          <label style={{ fontSize: 14, fontWeight: 700, color: "#3a4152", display: "block", marginBottom: 6 }}>
             Pick a document
           </label>
           <SearchSelect
@@ -367,7 +367,7 @@ function Governance() {
                 </span>
                 Protected
               </label>
-              <p style={{ fontSize: 12, color: "#161a26", fontStyle: "italic", margin: "-8px 0 16px" }}>
+              <p style={{ fontSize: 13.5, color: "#161a26", fontStyle: "italic", margin: "-8px 0 16px" }}>
                 Turn this on to stop this document from being archived or deleted, even after its retention period ends — useful when it's needed for a legal case, audit, or other reason it must be kept untouched for now.
               </p>
 

@@ -91,7 +91,7 @@ function StudentDetail() {
   if (!data) return null;
 
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-3xl vet-page-enter">
       <Link to="/training/students" className="text-sm text-blue-600 hover:underline">
         ← Back to All Students
       </Link>

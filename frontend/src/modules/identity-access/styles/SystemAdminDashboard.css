@@ -9,21 +9,21 @@
 .sad-loading,
 .sad-error {
   color: #8a93a6;
-  font-size: 13.5px;
+  font-size: 15px;
 }
 .sad-error { color: #96271f; }
 
 .sad-page-head h1 {
   margin: 0 0 4px;
   font-family: "Manrope", sans-serif;
-  font-size: 22px;
+  font-size: 24.5px;
   font-weight: 700;
   color: #161a26;
   letter-spacing: -0.2px;
 }
 .sad-page-head p {
   margin: 0;
-  font-size: 13.5px;
+  font-size: 15px;
   color: #8a93a6;
 }
 
@@ -44,15 +44,15 @@
 }
 .sad-kpi-top { display: flex; align-items: center; justify-content: space-between; }
 .sad-kpi-label {
-  font-size: 12.5px; font-weight: 700; color: #8a93a6;
+  font-size: 14px; font-weight: 700; color: #8a93a6;
   text-transform: uppercase; letter-spacing: 0.03em;
 }
 .sad-kpi-icon {
   width: 30px; height: 30px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
 }
-.sad-kpi-value { font-size: 30px; font-weight: 800; color: #161a26; letter-spacing: -0.5px; }
-.sad-kpi-delta { display: flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 600; }
+.sad-kpi-value { font-size: 33.5px; font-weight: 800; color: #161a26; letter-spacing: -0.5px; }
+.sad-kpi-delta { display: flex; align-items: center; gap: 5px; font-size: 14px; font-weight: 600; }
 .sad-kpi-delta.attn { color: #b45309; }
 .sad-muted { color: #8a93a6; font-weight: 500; }
 
@@ -73,11 +73,11 @@
   gap: 14px;
 }
 .sad-card-head { display: flex; align-items: baseline; justify-content: space-between; }
-.sad-card-title { font-size: 14px; font-weight: 700; color: #161a26; }
-.sad-card-sub { font-size: 11.5px; color: #8a93a6; font-weight: 500; }
+.sad-card-title { font-size: 15.5px; font-weight: 700; color: #161a26; }
+.sad-card-sub { font-size: 13px; color: #8a93a6; font-weight: 500; }
 
 .sad-legend { display: flex; flex-direction: column; gap: 8px; }
-.sad-legend-row { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: #3a4152; }
+.sad-legend-row { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #3a4152; }
 .sad-legend-swatch { width: 9px; height: 9px; border-radius: 2px; flex: none; }
 .sad-legend-name { flex: 1; }
 .sad-legend-val { font-weight: 700; color: #161a26; font-variant-numeric: tabular-nums; }
@@ -89,8 +89,8 @@
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   pointer-events: none;
 }
-.sad-donut-total { font-size: 22px; font-weight: 800; color: #161a26; line-height: 1.1; }
-.sad-donut-caption { font-size: 10.5px; color: #8a93a6; }
+.sad-donut-total { font-size: 24.5px; font-weight: 800; color: #161a26; line-height: 1.1; }
+.sad-donut-caption { font-size: 12px; color: #8a93a6; }
 
 /* ---- chart hover tooltip ---- */
 .sad-tooltip {
@@ -101,8 +101,8 @@
   box-shadow: 0 8px 20px rgba(22, 26, 38, 0.1);
   font-family: "Manrope", sans-serif;
 }
-.sad-tooltip-label { font-size: 11px; font-weight: 700; color: #8a93a6; margin-bottom: 4px; }
-.sad-tooltip-row { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: #3a4152; }
+.sad-tooltip-label { font-size: 12.5px; font-weight: 700; color: #8a93a6; margin-bottom: 4px; }
+.sad-tooltip-row { display: flex; align-items: center; gap: 7px; font-size: 14px; color: #3a4152; }
 .sad-tooltip-swatch { width: 8px; height: 8px; border-radius: 2px; flex: none; }
 .sad-tooltip-name { flex: 1; }
 .sad-tooltip-val { font-weight: 700; color: #161a26; margin-left: 10px; }
@@ -123,10 +123,10 @@
   display: flex; align-items: center; justify-content: center;
 }
 .sad-health-text { flex: 1; display: flex; flex-direction: column; gap: 1px; min-width: 0; }
-.sad-health-name { font-size: 13px; font-weight: 700; color: #161a26; }
-.sad-health-sub { font-size: 11.5px; color: #8a93a6; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sad-health-name { font-size: 14.5px; font-weight: 700; color: #161a26; }
+.sad-health-sub { font-size: 13px; color: #8a93a6; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sad-health-badge {
-  font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 999px;
+  font-size: 12.5px; font-weight: 700; padding: 4px 9px; border-radius: 999px;
   display: flex; align-items: center; gap: 5px; flex: none;
 }
 
@@ -140,9 +140,9 @@
   display: flex; align-items: center; justify-content: center;
 }
 .sad-activity-text { flex: 1; min-width: 0; }
-.sad-activity-title { font-size: 13px; font-weight: 600; color: #161a26; line-height: 1.4; }
-.sad-activity-sub { font-size: 11.5px; color: #8a93a6; margin-top: 2px; }
-.sad-activity-time { font-size: 11px; color: #8a93a6; font-weight: 600; flex: none; white-space: nowrap; padding-top: 1px; }
+.sad-activity-title { font-size: 14.5px; font-weight: 600; color: #161a26; line-height: 1.4; }
+.sad-activity-sub { font-size: 13px; color: #8a93a6; margin-top: 2px; }
+.sad-activity-time { font-size: 12.5px; color: #8a93a6; font-weight: 600; flex: none; white-space: nowrap; padding-top: 1px; }
 
 @media (max-width: 1280px) {
   .sad-kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }

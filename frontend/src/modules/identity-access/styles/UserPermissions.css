@@ -8,14 +8,14 @@
 
 .uperm-head h1 {
   font-family: "Sora", sans-serif;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
   color: #161a26;
   margin: 0 0 4px;
 }
 
 .uperm-head p {
-  font-size: 13px;
+  font-size: 14.5px;
   color: #3a4152;
   margin: 0;
 }
@@ -25,13 +25,13 @@
   color: #96271f;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 12.5px;
+  font-size: 14px;
   margin: 0 0 16px;
 }
 
 .uperm-empty {
   color: #3a4152;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .uperm-user-tabs {
@@ -59,25 +59,25 @@
 }
 
 .uperm-user-card.active {
-  border-color: #235777;
-  box-shadow: 0 0 0 2px #e4eef3;
+  border-color: #14486e;
+  box-shadow: 0 0 0 2px #e7f0f7;
 }
 
 .uperm-user-name {
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-size: 13.5px;
+  font-size: 15px;
   color: #161a26;
 }
 
 .uperm-user-sub {
-  font-size: 11px;
+  font-size: 12.5px;
   color: #3a4152;
 }
 
 .uperm-user-count {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 11px;
+  font-size: 12.5px;
   color: #3a4152;
   margin-top: 4px;
 }
@@ -93,13 +93,13 @@
 
 .uperm-groups-head h3 {
   margin: 0;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Sora", sans-serif;
   color: #161a26;
 }
 
 .uperm-hint {
-  font-size: 11px;
+  font-size: 12.5px;
   color: #3a4152;
 }
 
@@ -118,7 +118,7 @@
   margin-bottom: -1px;
   cursor: pointer;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 600;
   color: #3a4152;
 }
@@ -128,8 +128,8 @@
 }
 
 .uperm-module-tab.active {
-  color: #235777;
-  border-bottom-color: #235777;
+  color: #14486e;
+  border-bottom-color: #14486e;
 }
 
 .uperm-panel {
@@ -146,7 +146,7 @@
 .uperm-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 .uperm-table th {
@@ -154,7 +154,7 @@
   padding: 9px 16px;
   background: #eaeef4;
   color: #3a4152;
-  font-size: 10.5px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 700;
@@ -169,9 +169,9 @@
 
 .uperm-code {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 600;
-  color: #235777;
+  color: #14486e;
   white-space: nowrap;
 }
 
@@ -187,7 +187,7 @@
   gap: 5px;
   padding: 3px 9px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -206,7 +206,7 @@
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 5px 14px;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   font-family: inherit;

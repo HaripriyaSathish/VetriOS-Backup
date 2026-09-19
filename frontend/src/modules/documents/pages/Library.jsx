@@ -53,7 +53,7 @@ function LibraryDashboard({ stats }) {
         <div className="libd-kpi-card">
           <div className="libd-kpi-top">
             <span className="libd-kpi-label">Total Documents</span>
-            <span className="libd-kpi-icon" style={{ background: "#eef3f7", color: "#235777" }}><FolderOpen size={16} /></span>
+            <span className="libd-kpi-icon" style={{ background: "#e7f0f7", color: "#14486e" }}><FolderOpen size={16} /></span>
           </div>
           <div className="libd-kpi-value">{stats.total}</div>
         </div>
@@ -140,7 +140,7 @@ function LibraryDashboard({ stats }) {
               <CartesianGrid vertical={false} stroke="#eef0f3" />
               <XAxis
                 dataKey="date" tickFormatter={formatDay} axisLine={{ stroke: "#c3c2b7" }} tickLine={false}
-                tick={{ fontSize: 10, fill: "#161a26", fontFamily: "Manrope, sans-serif" }}
+                tick={{ fontSize: 11, fill: "#161a26", fontFamily: "Manrope, sans-serif" }}
                 interval="preserveStartEnd"
               />
               <Tooltip
@@ -442,7 +442,7 @@ function Library() {
                     <td>{new Date(d.updated_at).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}</td>
                     <td>
                       <div style={{ display: "flex", gap: 10 }}>
-                        <Eye size={15} color="#2563eb" style={{ cursor: "pointer" }} onClick={() => handleView(d)} title="View" />
+                        <Eye size={15} color="#14486e" style={{ cursor: "pointer" }} onClick={() => handleView(d)} title="View" />
                         <Download size={15} color="#16a34a" style={{ cursor: "pointer" }} onClick={() => handleDownload(d)} title="Download" />
                         <Link to={`/documents/governance?documentId=${d.document_id}`} title="Manage Access">
                           <ShieldAlert size={15} color="#7c3aed" style={{ cursor: "pointer" }} />

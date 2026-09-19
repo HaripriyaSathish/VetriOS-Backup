@@ -1,24 +1,36 @@
 @import "tailwindcss";
+@import "./styles/animations.css";
 :root {
-  --text: #1f2430;
-  --text-h: #08060d;
+  /* VetriOS brand theme: white surfaces, ink-blue accents, orange/yellow actions */
+  --text: #3a4152;
+  --text-h: #161a26;
   --bg: #fff;
-  --border: #e5e4e7;
+  --border: #e2e6ed;
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+
+  --ink-900: #0b2a46;
+  --ink-700: #14486e;
+  --ink-100: #e7f0f7;
+
+  --btn-primary: #f2871d;
+  --btn-primary-hover: #d9740a;
+  --btn-primary-text: #ffffff;
+  --btn-yellow: #ffc107;
+
+  --accent: var(--ink-700);
+  --accent-bg: var(--ink-100);
+  --accent-border: rgba(20, 72, 110, 0.5);
+  --social-bg: rgba(231, 240, 247, 0.6);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(11, 42, 70, 0.1) 0 10px 15px -3px, rgba(11, 42, 70, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
+  font: 20px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: light;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -27,27 +39,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
+    font-size: 18px;
   }
 }
 
@@ -70,21 +62,21 @@ h2 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 62.5px;
   letter-spacing: -1.68px;
   margin: 32px 0;
   @media (max-width: 1024px) {
-    font-size: 36px;
+    font-size: 40.5px;
     margin: 20px 0;
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: 27px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
   @media (max-width: 1024px) {
-    font-size: 20px;
+    font-size: 22.5px;
   }
 }
 p {
@@ -100,7 +92,7 @@ code,
 }
 
 code {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
