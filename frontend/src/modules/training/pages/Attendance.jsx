@@ -132,7 +132,7 @@ function Attendance() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
+    <div className="p-6 max-w-6xl mx-auto vet-page-enter">
       <h1 className="text-2xl font-bold text-gray-900 mb-1">Attendance</h1>
       <p className="text-gray-500 mb-6">Select a batch to mark attendance or download a report.</p>
 

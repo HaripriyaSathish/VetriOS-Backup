@@ -32,7 +32,7 @@ function AllStudentsList() {
   if (loading) return <p className="p-6 text-gray-500">Loading…</p>;
 
   return (
-    <div className="p-6">
+    <div className="p-6 vet-page-enter">
       <div className="flex items-center justify-between mb-4">
         <div>
           <h1 className="text-2xl font-semibold text-gray-800">All Students</h1>

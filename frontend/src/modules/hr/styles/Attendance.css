@@ -1,5 +1,6 @@
 .att-screen {
   font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  animation: var(--vet-page-enter);
 }
 
 .att-eyebrow {

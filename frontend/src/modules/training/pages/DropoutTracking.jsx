@@ -57,7 +57,7 @@ function DropoutTracking() {
   };
 
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-6 max-w-5xl mx-auto vet-page-enter">
       <h1 className="text-2xl font-bold text-gray-900 mb-6">Dropout Tracking</h1>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 mb-6 max-w-sm">

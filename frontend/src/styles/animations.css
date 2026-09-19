@@ -43,9 +43,15 @@
 }
 
 /* Page-level entrance: applied to a module's top-level wrapper so each
-   screen settles in instead of popping in flat. */
+   screen settles in instead of popping in flat. Two forms: the utility
+   class below, or the CSS variable for baking it straight into a
+   module's own root-wrapper selector (both respect reduced-motion). */
 .vet-page-enter {
   animation: vet-fade-in-up 0.4s ease both;
+}
+
+:root {
+  --vet-page-enter: vet-fade-in-up 0.4s ease both;
 }
 
 /* Staggered card/list entrance — pair with .vet-stagger > * (nth-child
@@ -85,6 +91,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  :root {
+    --vet-page-enter: none;
+  }
   .vet-page-enter,
   .vet-stagger > * {
     animation: none;

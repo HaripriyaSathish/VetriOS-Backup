@@ -6,6 +6,7 @@
   padding: 40px 16px;
   background: #ffffff;
   box-sizing: border-box;
+  animation: var(--vet-page-enter);
 }
 
 .pf-screen * {
@@ -78,11 +79,13 @@
   font-size: 15.5px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .pf-submit:hover:not(:disabled) {
   background: #d9740a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(217, 116, 10, 0.45);
 }
 
 .pf-submit:disabled {

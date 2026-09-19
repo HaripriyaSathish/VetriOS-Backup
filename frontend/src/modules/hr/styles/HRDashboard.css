@@ -1,5 +1,6 @@
 .hr-screen {
   font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  animation: var(--vet-page-enter);
 }
 
 .hr-head {
@@ -1028,9 +1029,12 @@
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .hr-btn-accent:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(176, 111, 28, 0.45);
   background: #b06f1c;
   border-color: #b06f1c;
   color: #fff;

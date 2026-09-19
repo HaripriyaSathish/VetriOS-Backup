@@ -85,7 +85,7 @@ function Reports() {
   };
 
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-6 max-w-5xl mx-auto vet-page-enter">
       <h1 className="text-2xl font-bold text-gray-900 mb-1">Reports</h1>
       <p className="text-gray-500 mb-6">Weekly / monthly zone reports — attendance and task completion.</p>
 

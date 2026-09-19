@@ -61,7 +61,7 @@ function CompletionExtensionApprovals() {
   if (loading) return <p className="p-6 text-gray-400">Loading…</p>;
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+    <div className="p-6 max-w-4xl mx-auto vet-page-enter">
       <h1 className="text-2xl font-bold text-gray-900 mb-1">Completion & Extension Approvals</h1>
       <p className="text-gray-500 mb-6">Review project lead recommendations for internship completion and extension.</p>
 

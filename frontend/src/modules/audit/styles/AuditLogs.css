@@ -1,5 +1,6 @@
 .audit-logs-page {
   padding: 24px;
+  animation: var(--vet-page-enter);
 }
 
 .audit-logs-header h1 {
@@ -78,10 +79,13 @@
 .btn-apply {
   background: #f2871d;
   color: white;
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn-apply:hover {
   background: #d9740a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(217, 116, 10, 0.45);
 }
 
 .btn-clear {

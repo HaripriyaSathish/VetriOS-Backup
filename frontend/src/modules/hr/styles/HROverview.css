@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
+  animation: var(--vet-page-enter);
 }
 
 .hrd-loading,
