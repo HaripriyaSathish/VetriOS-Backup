@@ -13,7 +13,7 @@ services:
     runtime: docker
     dockerfilePath: ./Dockerfile
     dockerContext: .
-    plan: starter
+    plan: free
     # "/" only confirms gunicorn + the frontend are up — it doesn't touch
     # the DB (every /api/* route needs a JWT and would 401 here), so it
     # can't catch a broken Tailscale relay. Verify DB connectivity by

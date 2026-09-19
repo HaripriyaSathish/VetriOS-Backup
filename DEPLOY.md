@@ -38,7 +38,14 @@ This should match (or replace) the `DB_HOST` value already in your
 ## 3. Create the Render service
 
 1. Push this branch (with `Dockerfile`, `render.yaml`, `DEPLOY.md`) to GitHub if you haven't already.
-2. In Render: **New → Blueprint**, pick this repo. Render reads `render.yaml` and proposes one web service (`vetrios-backup`).
+2. In Render: **New → Blueprint**, pick this repo. Render reads `render.yaml` and proposes one web service (`vetrios-backup`) on the **free** plan (`plan: free` in `render.yaml` — no card needed).
+
+   Free-tier trade-off: the service spins down after ~15 minutes of no
+   traffic and cold-starts (including rejoining Tailscale) on the next
+   request, which takes it 30-60 seconds to respond. Fine for testing;
+   if you want it always-on and instant, change `plan: free` to
+   `plan: starter` in `render.yaml` (paid, ~$7/mo) before creating the
+   Blueprint.
 3. Before/after creation, fill in every environment variable marked `sync: false` in `render.yaml`, in the Render dashboard's Environment tab:
 
    | Key | Value |
