@@ -11,7 +11,12 @@ import pypdf
 from cloudinary_storage.storage import RawMediaCloudinaryStorage
 from docx import Document as DocxDocument
 from docx.oxml.ns import qn
-from docx2pdf import convert as docx2pdf_convert
+try:
+    # Windows + Word (COM automation) only — not installed on Linux
+    # deployments, where convert_docx_to_pdf_bytes() below raises instead.
+    from docx2pdf import convert as docx2pdf_convert
+except ImportError:
+    docx2pdf_convert = None
 from xhtml2pdf import pisa
 from django.conf import settings
 from django.core.files.base import ContentFile
@@ -1246,6 +1251,11 @@ def convert_docx_to_pdf_bytes(docx_bytes):
     first — without this, docx2pdf works fine from a plain script
     (single default thread) but fails when called from a request thread
     that's never called CoInitialize()."""
+    if docx2pdf_convert is None:
+        raise RuntimeError(
+            "DOCX-to-PDF conversion needs Word (Windows only) and isn't "
+            "available on this server."
+        )
     import pythoncom
     pythoncom.CoInitialize()
     try:

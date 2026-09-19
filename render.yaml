@@ -1,0 +1,79 @@
+# Render Blueprint — one web service, one URL, serving both the API and
+# the built React frontend from a single Docker container.
+#
+# Create it via Render's dashboard: New -> Blueprint -> pick this repo ->
+# it reads this file automatically. Every `sync: false` env var below is
+# a secret you fill in yourself in the Render dashboard after creation —
+# never commit real secrets into this file. See DEPLOY.md for the full
+# walkthrough of what each one needs to be.
+
+services:
+  - type: web
+    name: vetrios-backup
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter
+    # "/" only confirms gunicorn + the frontend are up — it doesn't touch
+    # the DB (every /api/* route needs a JWT and would 401 here), so it
+    # can't catch a broken Tailscale relay. Verify DB connectivity by
+    # actually logging in after the first deploy.
+    healthCheckPath: /
+    envVars:
+      # --- Django core ---
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        sync: false # e.g. vetrios-backup.onrender.com
+      - key: CSRF_TRUSTED_ORIGINS
+        sync: false # e.g. https://vetrios-backup.onrender.com
+
+      # --- Existing Postgres, reached over Tailscale (see docker/entrypoint.sh) ---
+      - key: TAILSCALE_AUTHKEY
+        sync: false # generate at https://login.tailscale.com/admin/settings/keys
+      - key: TAILSCALE_DB_HOST
+        sync: false # the Tailscale IP of the machine hosting VetriOSDB, e.g. 100.94.127.20
+      - key: TAILSCALE_DB_PORT
+        value: "5432"
+      - key: DB_NAME
+        value: VetriOSDB
+      - key: DB_USER
+        value: vetri_app_role
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_HOST
+        value: 127.0.0.1 # Django connects to the local relay, not the tailnet IP directly
+      - key: DB_PORT
+        value: "5433" # must match PG_PROXY_LISTEN_PORT below
+
+      # --- Local Postgres relay (docker/tailscale_pg_proxy.py) ---
+      - key: PG_PROXY_LISTEN_PORT
+        value: "5433"
+      - key: TAILSCALE_SOCKS_PORT
+        value: "1055"
+
+      # --- Cloudinary (file storage for uploads) ---
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+
+      # --- Groq (AI assistant / document generator) ---
+      - key: GROQ_API_KEY
+        sync: false
+
+      # --- Email (default account) ---
+      - key: EMAIL_HOST_USER
+        sync: false
+      - key: EMAIL_HOST_PASSWORD
+        sync: false
+
+      # --- Email (module_07_email's Outlook/Office 365 account) ---
+      - key: OUTLOOK_EMAIL_HOST_USER
+        sync: false
+      - key: OUTLOOK_EMAIL_HOST_PASSWORD
+        sync: false
