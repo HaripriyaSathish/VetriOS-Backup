@@ -740,7 +740,7 @@ function UserAccounts() {
   });
 
   return (
-    <div className="ua-screen">
+    <div className="ua-screen vet-page-enter">
       <div className="ua-head">
         <div>
           <h1>User accounts</h1>

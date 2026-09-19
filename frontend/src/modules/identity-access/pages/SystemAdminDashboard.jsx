@@ -178,7 +178,7 @@ function SystemAdminDashboard({ user }) {
   const dbLabel = db.mode === "shared" ? "Shared Database (Tailscale)" : "Local Database (fallback)";
 
   return (
-    <div className="sad-body">
+    <div className="sad-body vet-page-enter">
       <div className="sad-page-head">
         <h1>System Administrator Dashboard</h1>
         <p>An overview of accounts, approvals, and system status across VetriOS.</p>

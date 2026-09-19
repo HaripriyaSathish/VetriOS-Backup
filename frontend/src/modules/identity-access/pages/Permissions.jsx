@@ -133,7 +133,7 @@ function Permissions() {
     : activeGroupPerms;
 
   return (
-    <div className="perm-screen">
+    <div className="perm-screen vet-page-enter">
       <div className="perm-head">
         <h1>Permissions</h1>
         <p>

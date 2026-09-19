@@ -370,9 +370,12 @@
   border-color: #f2871d !important;
   color: #fff !important;
   box-shadow: 0 2px 8px rgba(242, 135, 29, 0.25);
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 .reqa-primary:hover:not(:disabled) {
   background: #d9740a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(217, 116, 10, 0.45);
 }
 
 .reqa-error {

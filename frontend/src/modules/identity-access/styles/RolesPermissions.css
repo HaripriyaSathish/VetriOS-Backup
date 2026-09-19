@@ -194,12 +194,15 @@
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .rp-btn-accent:hover {
   background: #d9740a;
   border-color: #d9740a;
   color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(217, 116, 10, 0.45);
 }
 
 .rp-btn-accent:disabled {

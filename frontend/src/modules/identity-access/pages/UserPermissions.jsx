@@ -137,7 +137,7 @@ function UserPermissions() {
   const activeGroupPerms = groups.find(([name]) => name === activeGroup)?.[1] || [];
 
   return (
-    <div className="uperm-screen">
+    <div className="uperm-screen vet-page-enter">
       <div className="uperm-head">
         <h1>User Permissions</h1>
         <p>
